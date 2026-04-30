@@ -6,9 +6,7 @@ public class Spawner : MonoBehaviour
 
     public void TrySpawn(float chance, GameObject prefab)
     {
-        if (decided) return;
-        decided = true;
-
+        
         if (Random.value < chance)
         {
             Instantiate(prefab, transform.position, Quaternion.identity);

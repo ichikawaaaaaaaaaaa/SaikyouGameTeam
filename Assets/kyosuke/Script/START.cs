@@ -3,13 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class NewMonoBehaviourScript : MonoBehaviour
 {
-    
-    // Update is called once per frame
-    void Update()
+    private void OnMouseDown()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            SceneManager.LoadScene("Game Scene");
-        }    
+        SceneManager.LoadScene("Game Scene");
     }
 }

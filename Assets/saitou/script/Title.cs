@@ -1,13 +1,12 @@
-//using UnityEngine;
-//using UnityEngine.SceneManagement;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
-//public class Title : MonoBehaviour
-//{
-//    // ƒ{ƒ^ƒ“‚ª‰Ÿ‚³‚ê‚½Žž
-//    public void BackTitle()
-//    {
-//       // SceneManager.LoadScene("TitleScene");
-//    }
-//}
-//}
+public class Title : MonoBehaviour
+{
+    public void OnTileButtonClick()
+    {
+        SceneManager.LoadScene("Title Scene");
+    }
+}
+

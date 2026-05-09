@@ -1,16 +1,11 @@
-using UnityEngine;
+//using UnityEngine;
+//using UnityEngine.SceneManagement;
 
-public class SkillTree : MonoBehaviour
-{
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+//public class SkillTree : MonoBehaviour
+//{
+//    public void OnTileButtonClick()
+//    {
+//        SceneManager.LoadScene("Title Scene");
+//    }
+//}
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-}

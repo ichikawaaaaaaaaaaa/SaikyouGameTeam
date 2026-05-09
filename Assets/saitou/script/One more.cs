@@ -1,16 +1,11 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Onemore : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    // ƒ{ƒ^ƒ“‚ª‰Ÿ‚³‚ê‚½‚ÉÀs
+    public void OnTileButtonClick()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        SceneManager.LoadScene("KUSAMUSHIRI");
     }
 }

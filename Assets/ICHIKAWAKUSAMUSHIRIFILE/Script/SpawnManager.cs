@@ -61,6 +61,7 @@ public class SpawnManager : MonoBehaviour
         }
     }
 
+    // •\Ž¦‚·‚é‚â‚Â
     void UpdateWaveUI()
     {
         waveText.text = "Wave: " + wave;

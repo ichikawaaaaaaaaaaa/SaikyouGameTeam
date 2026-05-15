@@ -13,6 +13,9 @@ public class SpawnManager : MonoBehaviour
     public TextMeshProUGUI waveText;
     public TextMeshProUGUI timerText;
 
+    // 追加
+    public ScoreManager scoreManager;
+
     private Spawner[] spawners;
     private int wave = 0;
 
@@ -26,10 +29,15 @@ public class SpawnManager : MonoBehaviour
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Grass");
 
+        int removed = 0;
+
         foreach (var enemy in enemies)
         {
             Destroy(enemy);
+            removed++;
         }
+
+       
     }
 
     IEnumerator WaveLoop()
@@ -56,8 +64,13 @@ public class SpawnManager : MonoBehaviour
 
     void RunWave()
     {
-        // wave番号に対応したPrefab取得
         GameObject currentPrefab = GetPrefabForWave();
+
+        if (currentPrefab == null)
+        {
+            Debug.LogError("Prefabが設定されていません！");
+            return;
+        }
 
         foreach (var spawner in spawners)
         {
@@ -67,14 +80,11 @@ public class SpawnManager : MonoBehaviour
 
     GameObject GetPrefabForWave()
     {
-        // 配列が空ならnull
         if (wavePrefabs.Length == 0)
             return null;
 
-        // Wave1 → index0
         int index = wave - 1;
 
-        // 配列数を超えたら最後を使い続ける
         if (index >= wavePrefabs.Length)
             index = wavePrefabs.Length - 1;
 

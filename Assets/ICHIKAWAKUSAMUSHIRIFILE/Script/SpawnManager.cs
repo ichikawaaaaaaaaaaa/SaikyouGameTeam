@@ -4,9 +4,11 @@ using System.Collections;
 
 public class SpawnManager : MonoBehaviour
 {
-    public GameObject prefab;
-    public float spawnChance = 0.3f; //　スポーン確率
-    public float timeBetweenWaves = 10f; //　ウェーブの時間
+    [Header("WaveごとのPrefab")]
+    public GameObject[] wavePrefabs;
+
+    public float spawnChance = 0.3f;
+    public float timeBetweenWaves = 10f;
 
     public TextMeshProUGUI waveText;
     public TextMeshProUGUI timerText;
@@ -20,7 +22,6 @@ public class SpawnManager : MonoBehaviour
         StartCoroutine(WaveLoop());
     }
 
-    //　前のウェーブの草を消すやつ
     void ClearEnemies()
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Grass");
@@ -38,7 +39,7 @@ public class SpawnManager : MonoBehaviour
             wave++;
             UpdateWaveUI();
 
-            ClearEnemies();//　草削除呼
+            ClearEnemies();
 
             RunWave();
 
@@ -55,13 +56,31 @@ public class SpawnManager : MonoBehaviour
 
     void RunWave()
     {
+        // wave番号に対応したPrefab取得
+        GameObject currentPrefab = GetPrefabForWave();
+
         foreach (var spawner in spawners)
         {
-            spawner.TrySpawn(spawnChance, prefab);
+            spawner.TrySpawn(spawnChance, currentPrefab);
         }
     }
 
-    // 表示するやつ
+    GameObject GetPrefabForWave()
+    {
+        // 配列が空ならnull
+        if (wavePrefabs.Length == 0)
+            return null;
+
+        // Wave1 → index0
+        int index = wave - 1;
+
+        // 配列数を超えたら最後を使い続ける
+        if (index >= wavePrefabs.Length)
+            index = wavePrefabs.Length - 1;
+
+        return wavePrefabs[index];
+    }
+
     void UpdateWaveUI()
     {
         waveText.text = "Wave: " + wave;

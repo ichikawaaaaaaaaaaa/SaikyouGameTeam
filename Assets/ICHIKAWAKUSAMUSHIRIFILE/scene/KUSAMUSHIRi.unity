@@ -1717,8 +1717,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.875, y: -5.9062}
-  m_SizeDelta: {x: 1980, y: 917.37}
+  m_AnchoredPosition: {x: 7.875, y: -0.0004921}
+  m_SizeDelta: {x: 1980, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &910157929
 MonoBehaviour:
@@ -2509,7 +2509,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0960180b131b2364bbe72c8b16b237bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnManager
-  prefab: {fileID: 6060602293008922347, guid: 1012a1aa16ebf634389b488382be0b4a, type: 3}
+  wavePrefabs:
+  - {fileID: 6060602293008922347, guid: 1012a1aa16ebf634389b488382be0b4a, type: 3}
+  - {fileID: 6060602293008922347, guid: 1012a1aa16ebf634389b488382be0b4a, type: 3}
+  - {fileID: 6060602293008922347, guid: 1012a1aa16ebf634389b488382be0b4a, type: 3}
+  - {fileID: 6060602293008922347, guid: 1012a1aa16ebf634389b488382be0b4a, type: 3}
+  - {fileID: 6060602293008922347, guid: 1012a1aa16ebf634389b488382be0b4a, type: 3}
+  - {fileID: 6060602293008922347, guid: 1012a1aa16ebf634389b488382be0b4a, type: 3}
+  - {fileID: 6060602293008922347, guid: 1012a1aa16ebf634389b488382be0b4a, type: 3}
+  - {fileID: 6060602293008922347, guid: 1012a1aa16ebf634389b488382be0b4a, type: 3}
+  - {fileID: 6060602293008922347, guid: 1012a1aa16ebf634389b488382be0b4a, type: 3}
+  - {fileID: 6060602293008922347, guid: 1012a1aa16ebf634389b488382be0b4a, type: 3}
   spawnChance: 0.3
   timeBetweenWaves: 10
   waveText: {fileID: 519633505}

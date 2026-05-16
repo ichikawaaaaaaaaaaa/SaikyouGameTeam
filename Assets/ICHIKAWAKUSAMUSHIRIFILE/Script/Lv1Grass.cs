@@ -23,7 +23,7 @@ public class Lv1Grass : MonoBehaviour
         // クールチェック
         if (Time.time < nextClickTime)
         {
-            Debug.Log("クール中で押せない");
+            Debug.Log("クールタイム中で押せない");
             return;
         }
 

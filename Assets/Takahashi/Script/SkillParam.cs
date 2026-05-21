@@ -48,6 +48,12 @@ public class SkillParam : MonoBehaviour
             ChangeButtonColor(new Color(0f, 0f, 1f, 1f));
 
             text.text = skillTitle + "‚ðŠo‚¦‚½";
+        } 
+        // Player‚ÉƒXƒLƒ‹Œø‰Ê‚ð”½‰f
+        Playertest playertest = FindObjectOfType<Playertest>();
+        if (playertest != null)
+        {
+            playertest.UpdateSkillEffect();
         }
         else
         {

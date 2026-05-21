@@ -7,12 +7,12 @@ public enum SkillType
 {
     Cooldown1,
     Cooldown2,
-    Range1,
-    Range2,
+    harvestSize1,
+    harvestSize2,
     Cooldown3,
     Cooldown4,
     Cooldown5,
-    Range3
+    harvestSize3
 };
 
 public class SkillSystem : MonoBehaviour
@@ -69,19 +69,19 @@ public class SkillSystem : MonoBehaviour
             return skills[(int)SkillType.Cooldown1];
             
         }
-        else if (type == SkillType.Range1)
+        else if (type == SkillType.harvestSize1)
         {
             return skills[(int)SkillType.Cooldown2];
            
         }
-        else if (type == SkillType.Range2)
+        else if (type == SkillType.harvestSize2)
         {
-            return skills[(int)SkillType.Range1];
+            return skills[(int)SkillType.harvestSize1];
             
         }
         else if (type == SkillType.Cooldown3)
         {
-            return skills[(int)SkillType.Range2];
+            return skills[(int)SkillType.harvestSize2];
             
         }
         else if (type == SkillType.Cooldown4)
@@ -92,21 +92,13 @@ public class SkillSystem : MonoBehaviour
         {
             return skills[(int)SkillType.Cooldown4];
         }
-        else if (type == SkillType.Range3)
+        else if (type == SkillType.harvestSize3)
         {
             return skills[(int)SkillType.Cooldown5];
         }
         return true;
     }
-    //　スキル毎にボタンのオン・オフをする処理を実行させる
-    //void CheckOnOff()
-    //{
-    //    foreach (var skillParam in skillParams)
-    //    {
-    //        skillParam.CheckButtonOnOff();
-    //    }
-    //}
-
+   
     void SetText()
     {
         skillText.text = "スキルポイント：" + skillPoint;

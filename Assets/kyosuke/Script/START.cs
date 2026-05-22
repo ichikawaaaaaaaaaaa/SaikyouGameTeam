@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class NewMonoBehaviourScript : MonoBehaviour
 {
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
         SceneManager.LoadScene("Game Scene");
     }

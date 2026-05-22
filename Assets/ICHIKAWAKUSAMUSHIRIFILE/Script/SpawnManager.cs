@@ -1,6 +1,7 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
-using System.Collections;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class SpawnManager : MonoBehaviour
@@ -30,6 +31,9 @@ public class SpawnManager : MonoBehaviour
     private int wave = 0;
 
     public Image timerFillImage;
+
+    [Header("Scene Change")]
+public bool moveSceneAfterLastWave = true;
 
     void Awake()
     {
@@ -64,7 +68,7 @@ public class SpawnManager : MonoBehaviour
     // Waveループ
     IEnumerator WaveLoop()
     {
-        while (true)
+        while (wave < wavePrefabs.Length)
         {
             wave++;
 
@@ -82,12 +86,17 @@ public class SpawnManager : MonoBehaviour
 
                 UpdateTimerUI(timer);
 
-                // FillAmount更新
                 timerFillImage.fillAmount =
                     timer / timeBetweenWaves;
 
                 yield return null;
             }
+        }
+
+        // 最終Wave終了後
+        if (moveSceneAfterLastWave)
+        {
+            SceneManager.LoadScene("ttt");
         }
     }
 

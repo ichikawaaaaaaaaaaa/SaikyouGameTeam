@@ -1,11 +1,11 @@
-//using UnityEngine;
-//using UnityEngine.SceneManagement;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
-//public class SkillTree : MonoBehaviour
-//{
-//    public void OnTileButtonClick()
-//    {
-//        SceneManager.LoadScene("Title Scene");
-//    }
-//}
+public class SkillTree : MonoBehaviour
+{
+    public void SkillTreeClick()
+    {
+        SceneManager.LoadScene("SkillTest");
+    }
+}
 

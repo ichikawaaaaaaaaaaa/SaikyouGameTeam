@@ -32,7 +32,12 @@ public class ScoreManager : MonoBehaviour
         skillPoint += amount;
         UpdateUI();
     }
+   
 
+    public int GetSkillPoint()
+    {
+        return skillPoint;
+    }
     void UpdateUI()
     {
         scoreText.text = "GrassCount: " + destroyedCount;

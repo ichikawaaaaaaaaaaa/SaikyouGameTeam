@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class END : MonoBehaviour
 {
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;

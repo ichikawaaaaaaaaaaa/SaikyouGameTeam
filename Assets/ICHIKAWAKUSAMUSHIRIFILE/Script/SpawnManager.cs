@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class SpawnManager : MonoBehaviour
 {
@@ -28,6 +29,8 @@ public class SpawnManager : MonoBehaviour
 
     private int wave = 0;
 
+    public Image timerFillImage;
+
     void Awake()
     {
         instance = this;
@@ -42,7 +45,6 @@ public class SpawnManager : MonoBehaviour
 
 
     // Grid生成
-
     void CreateGrid()
     {
         grid = new Cell[width, height];
@@ -60,7 +62,6 @@ public class SpawnManager : MonoBehaviour
     }
 
     // Waveループ
-
     IEnumerator WaveLoop()
     {
         while (true)
@@ -81,6 +82,10 @@ public class SpawnManager : MonoBehaviour
 
                 UpdateTimerUI(timer);
 
+                // FillAmount更新
+                timerFillImage.fillAmount =
+                    timer / timeBetweenWaves;
+
                 yield return null;
             }
         }
@@ -88,7 +93,6 @@ public class SpawnManager : MonoBehaviour
 
 
     // Waveスポーン
-
     void SpawnWave()
     {
         GameObject prefab = GetPrefabForWave();
@@ -113,7 +117,6 @@ public class SpawnManager : MonoBehaviour
 
 
     // 草スポーン
-
     public void SpawnGrass(
         int x,
         int y,
@@ -130,7 +133,6 @@ public class SpawnManager : MonoBehaviour
 
 
     // マス収穫
-
     public void HarvestCell(int x, int y)
     {
         Cell cell = grid[x, y];
@@ -150,7 +152,6 @@ public class SpawnManager : MonoBehaviour
     }
 
     // 範囲収穫
-
     public void HarvestArea(
         int startX,
         int startY,
@@ -169,7 +170,6 @@ public class SpawnManager : MonoBehaviour
 
  
     // 全削除
-   
     void ClearGrid()
     {
         for (int x = 0; x < width; x++)
@@ -203,7 +203,6 @@ public class SpawnManager : MonoBehaviour
     }
 
     // 座標変換
-   
     public Vector2Int WorldToGrid(Vector3 worldPos)
     {
         int x =
@@ -225,7 +224,6 @@ public class SpawnManager : MonoBehaviour
     }
 
     // 範囲内判定
-    
     bool IsInsideGrid(int x, int y)
     {
         return x >= 0 &&
@@ -236,7 +234,6 @@ public class SpawnManager : MonoBehaviour
 
 
     // UI
-
     void UpdateWaveUI()
     {
         if (waveText != null)

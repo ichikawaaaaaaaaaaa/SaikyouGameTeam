@@ -1,11 +1,16 @@
 using UnityEngine;
 
-public class NO : MonoBehaviour
+public class No : MonoBehaviour
 {
-    public GameObject targetWindow;
+    public GameObject weaponSelectUI;
+    public GameObject confirmWindow;
+    public GameObject lockWindow;
 
-    public void No()
+    private void OnMouseDown()
     {
-        targetWindow.SetActive(false);
+        confirmWindow.SetActive(false);
+        lockWindow.SetActive(false);
+
+        weaponSelectUI.SetActive(true);
     }
 }

@@ -4,6 +4,9 @@ public class WeaponButton : MonoBehaviour
 {
     public GameObject confirmWindow;
     public GameObject lockWindow;
+    public GameObject confirmWindow1;
+    public GameObject lockWindow2;
+
 
     public bool unlocked;
 

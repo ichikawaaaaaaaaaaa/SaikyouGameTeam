@@ -9,29 +9,15 @@ public class Lv1Grass : MonoBehaviour
 
     private SpriteRenderer sr;
 
-    // 全体クールタイム
-    private static float nextClickTime = 0f;
-    public float cooldown = 1f;
-
-    void Start()
+    void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
     }
 
-    void OnMouseDown()
+    // 収穫時
+    public void Harvest()
     {
-        // クールチェック
-        if (Time.time < nextClickTime)
-        {
-            Debug.Log("クール中で押せない");
-            return;
-        }
-
-        nextClickTime = Time.time + cooldown;
-
-        Debug.Log("クリック成功");
-
-        // スコア
+        // スコア加算
         if (ScoreManager.instance != null)
         {
             ScoreManager.instance.AddScore(score);
@@ -44,7 +30,6 @@ public class Lv1Grass : MonoBehaviour
             sr.sprite = clickedSprite;
         }
 
-        // 削除
-        Destroy(gameObject);
+        Destroy(gameObject, 0.1f);
     }
 }

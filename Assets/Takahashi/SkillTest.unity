@@ -1532,7 +1532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
   skillSystem: {fileID: 1059873437}
-  type: 4
+  type: 6
   spendPoint: 40
   skillTitle: "Lv3\u9593\u9694\u77ED\u7E2E"
   skillInformation: "\u30AF\u30FC\u30EB\u30BF\u30A4\u30E0\u304C0.1\u77ED\u7E2E"
@@ -1804,7 +1804,7 @@ GameObject:
   - component: {fileID: 293937361}
   - component: {fileID: 293937360}
   m_Layer: 5
-  m_Name: 15
+  m_Name: i50
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2864,7 +2864,7 @@ GameObject:
   - component: {fileID: 412104508}
   - component: {fileID: 412104507}
   m_Layer: 5
-  m_Name: 60
+  m_Name: i100
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3240,7 +3240,7 @@ GameObject:
   - component: {fileID: 458450849}
   - component: {fileID: 458450848}
   m_Layer: 5
-  m_Name: 25
+  m_Name: i70
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3776,13 +3776,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 491473703}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 491473708}
+        m_TargetAssemblyTypeName: SkillParam, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3838,11 +3838,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
-  skillSystem: {fileID: 0}
+  skillSystem: {fileID: 1059873437}
   type: 0
   spendPoint: 30
-  skillTitle: 
-  skillInformation: 
+  skillTitle: "\u938C"
+  skillInformation: "\u65B0\u6B66\u5668\u7A2E\u3092\u89E3\u653E\u3059\u308B"
   text: {fileID: 1460839407}
 --- !u!1 &499993677
 GameObject:
@@ -4017,7 +4017,7 @@ GameObject:
   - component: {fileID: 538384886}
   - component: {fileID: 538384885}
   m_Layer: 5
-  m_Name: 10
+  m_Name: i40
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4418,7 +4418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
   skillSystem: {fileID: 1059873437}
-  type: 2
+  type: 4
   spendPoint: 20
   skillTitle: "Lv\uFF11\u7BC4\u56F2\u62E1\u5927"
   skillInformation: "\u7BC4\u56F2\u3092\uFF11\u30DE\u30B9\u8FFD\u52A0"
@@ -5194,7 +5194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
   skillSystem: {fileID: 1059873437}
-  type: 3
+  type: 5
   spendPoint: 25
   skillTitle: "Lv2\u7BC4\u56F2\u62E1\u5927"
   skillInformation: "\u7BC4\u56F2\u304C\uFF11\u30DE\u30B9\u5897\u3048\u308B"
@@ -5904,7 +5904,7 @@ GameObject:
   - component: {fileID: 757639873}
   - component: {fileID: 757639872}
   m_Layer: 5
-  m_Name: 100 (1)
+  m_Name: i160
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7910,7 +7910,7 @@ GameObject:
   - component: {fileID: 1054855001}
   - component: {fileID: 1054855000}
   m_Layer: 5
-  m_Name: 20
+  m_Name: i60
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8371,7 +8371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
   skillSystem: {fileID: 1059873437}
-  type: 1
+  type: 3
   spendPoint: 15
   skillTitle: "Lv2\u9593\u9694\u77ED\u7E2E"
   skillInformation: "\u30AF\u30FC\u30EB\u30BF\u30A4\u30E0\u304C0.1\u77ED\u7E2E"
@@ -9773,7 +9773,7 @@ GameObject:
   - component: {fileID: 1298579264}
   - component: {fileID: 1298579263}
   m_Layer: 5
-  m_Name: 100
+  m_Name: i140
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10290,7 +10290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
   skillSystem: {fileID: 1059873437}
-  type: 0
+  type: 2
   spendPoint: 10
   skillTitle: "Lv1\u9593\u9694\u77ED\u7E2E"
   skillInformation: "\u30AF\u30FC\u30EB\u30BF\u30A4\u30E0\u304C0.1\u77ED\u7E2E"
@@ -11190,7 +11190,7 @@ GameObject:
   - component: {fileID: 1472985248}
   - component: {fileID: 1472985247}
   m_Layer: 5
-  m_Name: 80
+  m_Name: i120
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11773,7 +11773,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
   skillSystem: {fileID: 1059873437}
-  type: 6
+  type: 8
   spendPoint: 80
   skillTitle: "Lv5\u9593\u9694\u77ED\u7E2E"
   skillInformation: "\u30AF\u30FC\u30EB\u30BF\u30A4\u30E0\u304C0.1\u77ED\u7E2E"
@@ -12351,7 +12351,7 @@ GameObject:
   - component: {fileID: 1693084249}
   - component: {fileID: 1693084248}
   m_Layer: 5
-  m_Name: 30
+  m_Name: i90
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12831,7 +12831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
   skillSystem: {fileID: 1059873437}
-  type: 5
+  type: 7
   spendPoint: 60
   skillTitle: "Lv4\u9593\u9694\u77ED\u7E2E"
   skillInformation: "\u30AF\u30FC\u30EB\u30BF\u30A4\u30E0\u304C0.1\u77ED\u7E2E"
@@ -13900,7 +13900,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
   skillSystem: {fileID: 1059873437}
-  type: 7
+  type: 9
   spendPoint: 100
   skillTitle: "Lv3\u7BC4\u56F2\u62E1\u5927"
   skillInformation: "\u7BC4\u56F2\u304C2\u30DE\u30B9\u5897\u52A0"
@@ -14791,7 +14791,7 @@ GameObject:
   - component: {fileID: 2117783723}
   - component: {fileID: 2117783722}
   m_Layer: 5
-  m_Name: 40
+  m_Name: i80
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

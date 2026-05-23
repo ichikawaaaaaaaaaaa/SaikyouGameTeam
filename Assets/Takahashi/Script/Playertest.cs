@@ -86,14 +86,56 @@ public class Playertest : MonoBehaviour
             harvestSizeX += 2;
             harvestSizeY += 2;
         }
-
+        if (skillSystem.IsSkill(SkillType.iharvestSize1))
+        {
+            harvestSizeX += 1;
+            harvestSizeY += 1;
+        }
+        if (skillSystem.IsSkill(SkillType.iharvestSize2))
+        {
+            harvestSizeX += 1;
+            harvestSizeY += 1;
+        }
+        if (skillSystem.IsSkill(SkillType.iharvestSize3))
+        {
+            harvestSizeX += 2;
+            harvestSizeY += 2;
+        }
+        if (skillSystem.IsSkill(SkillType.iharvestSize4))
+        {
+            harvestSizeX += 2;
+            harvestSizeY += 2;
+        }
+        if (skillSystem.IsSkill(SkillType.charvestSize1))
+        {
+            harvestSizeX += 1;
+            harvestSizeY += 1;
+        }
+        if (skillSystem.IsSkill(SkillType.charvestSize2))
+        {
+            harvestSizeX += 1;
+            harvestSizeY += 1;
+        }
+        if (skillSystem.IsSkill(SkillType.charvestSize3))
+        {
+            harvestSizeX += 2;
+            harvestSizeY += 2;
+        }
         // クールタイム短縮スキル
         if (skillSystem.IsSkill(SkillType.Cooldown1)) cooldown *= 0.9f;
         if (skillSystem.IsSkill(SkillType.Cooldown2)) cooldown *= 0.8f;
         if (skillSystem.IsSkill(SkillType.Cooldown3)) cooldown *= 0.7f;
         if (skillSystem.IsSkill(SkillType.Cooldown4)) cooldown *= 0.6f;
         if (skillSystem.IsSkill(SkillType.Cooldown5)) cooldown *= 0.5f;
-
+        if (skillSystem.IsSkill(SkillType.iCooldown1)) cooldown *= 0.9f;
+        if (skillSystem.IsSkill(SkillType.iCooldown2)) cooldown *= 0.8f;
+        if (skillSystem.IsSkill(SkillType.iCooldown3)) cooldown *= 0.7f;
+        if (skillSystem.IsSkill(SkillType.iCooldown4)) cooldown *= 0.6f;
+        if (skillSystem.IsSkill(SkillType.iCooldown5)) cooldown *= 0.5f;
+        if (skillSystem.IsSkill(SkillType.cCooldown1)) cooldown *= 0.9f;
+        if (skillSystem.IsSkill(SkillType.cCooldown2)) cooldown *= 0.8f;
+        if (skillSystem.IsSkill(SkillType.cCooldown3)) cooldown *= 0.7f;
+        
         Debug.Log($"スキル反映 → 収穫サイズ: {harvestSizeX}x{harvestSizeY}, クールタイム: {cooldown}");
     }
 }

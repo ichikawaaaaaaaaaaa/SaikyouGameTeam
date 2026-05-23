@@ -96,7 +96,7 @@ public bool moveSceneAfterLastWave = true;
         // ÅIWaveI—¹Œã
         if (moveSceneAfterLastWave)
         {
-            SceneManager.LoadScene("ttt");
+            SceneManager.LoadScene("SkillTest");
         }
     }
 

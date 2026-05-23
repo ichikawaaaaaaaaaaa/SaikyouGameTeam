@@ -142,5 +142,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grass
   score: 1
-  skillPoint: 1
+  skillPoint: 50
   clickedSprite: {fileID: 21300000, guid: 86e9dcb2503ff8f41b71bad8eb64f0f4, type: 3}

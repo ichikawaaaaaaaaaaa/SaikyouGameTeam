@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Playertest : MonoBehaviour
 {
+    public static Playertest instance;
+
     [Header("収穫サイズ")]
     public int harvestSizeX = 1;
     public int harvestSizeY = 1;
@@ -11,15 +13,24 @@ public class Playertest : MonoBehaviour
 
     private float nextHarvestTime = 0f;
 
-    // SkillSystemを参照（SkillTreeSceneで覚えたスキルも反映）
     private SkillSystem skillSystem;
+
+    void Awake()
+    {
+        // シングルトン化
+        if (instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        instance = this;
+    }
 
     void Start()
     {
-        // シーン間で保持されるSkillSystemを取得
-        skillSystem = FindObjectOfType<SkillSystem>();
+        skillSystem = SkillSystem.instance;
 
-        // スキル効果を反映
         UpdateSkillEffect();
     }
 
@@ -33,7 +44,6 @@ public class Playertest : MonoBehaviour
 
     void ClickGrid()
     {
-        // クールタイムチェック
         if (Time.time < nextHarvestTime)
         {
             Debug.Log("クールタイム中");
@@ -49,7 +59,6 @@ public class Playertest : MonoBehaviour
 
         Debug.Log($"クリックGrid: {gridPos}");
 
-        // 収穫処理
         SpawnManager.instance.HarvestArea(
             gridPos.x,
             gridPos.y,
@@ -59,18 +68,23 @@ public class Playertest : MonoBehaviour
     }
 
     /// <summary>
-    /// スキル効果をPlayerに反映する
+    /// スキル効果を反映（外部から呼んでOK）
     /// </summary>
     public void UpdateSkillEffect()
     {
+        if (skillSystem == null)
+        {
+            skillSystem = SkillSystem.instance;
+        }
+
         if (skillSystem == null) return;
 
-        // 基本値にリセット
+        // 初期化
         harvestSizeX = 1;
         harvestSizeY = 1;
         cooldown = 1f;
 
-        // 収穫サイズスキル
+        // 収穫サイズ系
         if (skillSystem.IsSkill(SkillType.harvestSize1))
         {
             harvestSizeX += 1;
@@ -86,6 +100,7 @@ public class Playertest : MonoBehaviour
             harvestSizeX += 2;
             harvestSizeY += 2;
         }
+
         if (skillSystem.IsSkill(SkillType.iharvestSize1))
         {
             harvestSizeX += 1;
@@ -106,6 +121,7 @@ public class Playertest : MonoBehaviour
             harvestSizeX += 2;
             harvestSizeY += 2;
         }
+
         if (skillSystem.IsSkill(SkillType.charvestSize1))
         {
             harvestSizeX += 1;
@@ -121,21 +137,24 @@ public class Playertest : MonoBehaviour
             harvestSizeX += 2;
             harvestSizeY += 2;
         }
-        // クールタイム短縮スキル
+
+        // クールタイム系
         if (skillSystem.IsSkill(SkillType.Cooldown1)) cooldown *= 0.9f;
         if (skillSystem.IsSkill(SkillType.Cooldown2)) cooldown *= 0.8f;
         if (skillSystem.IsSkill(SkillType.Cooldown3)) cooldown *= 0.7f;
         if (skillSystem.IsSkill(SkillType.Cooldown4)) cooldown *= 0.6f;
         if (skillSystem.IsSkill(SkillType.Cooldown5)) cooldown *= 0.5f;
+
         if (skillSystem.IsSkill(SkillType.iCooldown1)) cooldown *= 0.9f;
         if (skillSystem.IsSkill(SkillType.iCooldown2)) cooldown *= 0.8f;
         if (skillSystem.IsSkill(SkillType.iCooldown3)) cooldown *= 0.7f;
         if (skillSystem.IsSkill(SkillType.iCooldown4)) cooldown *= 0.6f;
         if (skillSystem.IsSkill(SkillType.iCooldown5)) cooldown *= 0.5f;
+
         if (skillSystem.IsSkill(SkillType.cCooldown1)) cooldown *= 0.9f;
         if (skillSystem.IsSkill(SkillType.cCooldown2)) cooldown *= 0.8f;
         if (skillSystem.IsSkill(SkillType.cCooldown3)) cooldown *= 0.7f;
-        
-        Debug.Log($"スキル反映 → 収穫サイズ: {harvestSizeX}x{harvestSizeY}, クールタイム: {cooldown}");
+
+        Debug.Log($"スキル反映 → {harvestSizeX}x{harvestSizeY}, CD:{cooldown}");
     }
 }

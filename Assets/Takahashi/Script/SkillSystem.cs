@@ -45,9 +45,8 @@ public class SkillSystem : MonoBehaviour
 
     void Awake()
     {
-        skills = new bool[skillParams.Length];
+        skills = new bool[System.Enum.GetValues(typeof(SkillType)).Length];
     }
-
     void Start()
     {
         SetText();
@@ -113,11 +112,11 @@ public class SkillSystem : MonoBehaviour
         {
             return skills[(int)SkillType.Cooldown5];
         }
-
-        if (type == SkillType.Sickle)
+        else if (type == SkillType.Sickle)
         {
             return skills[(int)SkillType.harvestSize2];
         }
+
         else if (type == SkillType.iharvestSize1)
         {
             return skills[(int)SkillType.Sickle];
@@ -156,35 +155,35 @@ public class SkillSystem : MonoBehaviour
             return skills[(int)SkillType.iCooldown5];
         }
 
-    //    if (type == SkillType.Scythe)
-    //    {
-    //        return skills[(int)SkillType.iCooldown2];
-    //    }
-    //    else if (type == SkillType.charvestSize1)
-    //    {
-    //        return skills[(int)SkillType.Scythe];
-    //    }
-    //    else if (type == SkillType.cCooldown1)
-    //    {
-    //        return skills[(int)SkillType.charvestSize1];
-    //    }
-    //    else if (type == SkillType.cCooldown2)
-    //    {
-    //        return skills[(int)SkillType.cCooldown1];
-    //    }
-    //    else if (type == SkillType.charvestSize2)
-    //    {
-    //        return skills[(int)SkillType.charvestSize2];
-    //    }
-    //    else if (type == SkillType.charvestSize3)
-    //    {
-    //        return skills[(int)SkillType.charvestSize2];
-    //    }
-    //    else if (type == SkillType.cCooldown3)
-    //    {
-    //        return skills[(int)SkillType.charvestSize3];
-    //    }
-       return true;
+        if (type == SkillType.Scythe)
+        {
+            return skills[(int)SkillType.iCooldown2];
+        }
+        else if (type == SkillType.charvestSize1)
+        {
+            return skills[(int)SkillType.Scythe];
+        }
+        else if (type == SkillType.cCooldown1)
+        {
+            return skills[(int)SkillType.charvestSize1];
+        }
+        else if (type == SkillType.cCooldown2)
+        {
+            return skills[(int)SkillType.cCooldown1];
+        }
+        else if (type == SkillType.charvestSize2)
+        {
+            return skills[(int)SkillType.cCooldown2];
+        }
+        else if (type == SkillType.charvestSize3)
+        {
+            return skills[(int)SkillType.charvestSize2];
+        }
+        else if (type == SkillType.cCooldown3)
+        {
+            return skills[(int)SkillType.charvestSize3];
+        }
+        return true;
     }
 
     void SetText()

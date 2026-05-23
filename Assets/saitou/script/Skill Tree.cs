@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class SkillTree : MonoBehaviour
 {
-    public void SkillTreeClick()
+    public void OnTileButtonClick()
     {
         SceneManager.LoadScene("SkillTest");
     }

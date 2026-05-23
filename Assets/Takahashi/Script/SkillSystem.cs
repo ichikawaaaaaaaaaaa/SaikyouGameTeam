@@ -50,7 +50,13 @@ public class SkillSystem : MonoBehaviour
     void Start()
     {
         SetText();
+       
     }
+    void Update()
+    {
+        SetText();
+    }
+
 
     // ƒXƒLƒ‹‚ðŠo‚¦‚é
     public void LearnSkill(SkillType type, int point)

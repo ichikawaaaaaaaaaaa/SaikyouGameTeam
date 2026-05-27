@@ -1,48 +1,56 @@
-using TMPro;
 using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
 
-    public TextMeshProUGUI scoreText;
-    public TextMeshProUGUI skillText;
-
     private int destroyedCount = 0;
-    private int skillPoint = 0;
+    private int totalSkillPoint = 0;
+    private int waveSkillPoint = 0;
 
     void Awake()
     {
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         instance = this;
-        //ここ
         DontDestroyOnLoad(gameObject);
     }
 
-    void Start()
-    {
-        UpdateUI();
-    }
-
+    // 草カウント
     public void AddScore(int amount)
     {
         destroyedCount += amount;
-        UpdateUI();
     }
 
+    public int GetScore()
+    {
+        return destroyedCount;
+    }
+
+    // スキルポイント追加
     public void AddSkillPoint(int amount)
     {
-        skillPoint += amount;
-        UpdateUI();
+        totalSkillPoint += amount;
+        waveSkillPoint += amount;
     }
-   
 
-    public int GetSkillPoint()
+    // Wave用
+    public int GetWaveSkillPoint()
     {
-        return skillPoint;
+        return waveSkillPoint;
     }
-    void UpdateUI()
+
+    public int GetTotalSkillPoint()
     {
-        scoreText.text = "GrassCount: " + destroyedCount;
-        skillText.text = "SkillPoint: " + skillPoint;
+        return totalSkillPoint;
+    }
+
+    public void ResetWaveSkillPoint()
+    {
+        waveSkillPoint = 0;
     }
 }

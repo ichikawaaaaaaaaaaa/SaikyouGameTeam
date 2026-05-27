@@ -17,7 +17,7 @@ public class WaveManager : MonoBehaviour
     [Header("Scene Change")]
     public bool moveSceneAfterLastWave = true;
 
-    private int wave = 0;
+    public static int wave = 0;
 
     void Start()
     {
@@ -30,11 +30,9 @@ public class WaveManager : MonoBehaviour
 
         while (wave < spawnManager.wavePrefabs.Length)
         {
-            wave++;
-
             UpdateWaveUI();
 
-            spawnManager.SpawnWave(wave);
+            spawnManager.SpawnWave(wave + 1);
 
             float timer = timeBetweenWaves;
 
@@ -52,10 +50,8 @@ public class WaveManager : MonoBehaviour
 
                 yield return null;
             }
-        }
+            wave++;
 
-        if (moveSceneAfterLastWave)
-        {
             SceneManager.LoadScene("SkillTest");
         }
     }
@@ -64,7 +60,7 @@ public class WaveManager : MonoBehaviour
     {
         if (waveText != null)
         {
-            waveText.text = "Wave : " + wave;
+            waveText.text = "Wave : " + (wave + 1);
         }
     }
 

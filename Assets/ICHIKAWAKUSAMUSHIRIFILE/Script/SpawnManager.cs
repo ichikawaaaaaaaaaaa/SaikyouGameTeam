@@ -1,8 +1,4 @@
-using System.Collections;
-using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class SpawnManager : MonoBehaviour
 {
@@ -14,41 +10,27 @@ public class SpawnManager : MonoBehaviour
 
     public float cellSize = 1f;
 
-    [Header("Wave")]
+    [Header("Spawn")]
     public GameObject[] wavePrefabs;
 
     [Range(0f, 1f)]
     public float spawnChance = 0.3f;
 
-    public float timeBetweenWaves = 10f;
-
-    [Header("UI")]
-    public TextMeshProUGUI waveText;
-    public TextMeshProUGUI timerText;
-
     public Cell[,] grid;
-
-    private int wave = 0;
-
-    public Image timerFillImage;
-
-    [Header("Scene Change")]
-public bool moveSceneAfterLastWave = true;
 
     void Awake()
     {
         instance = this;
+
+        CreateGrid();
     }
 
     void Start()
     {
-        CreateGrid();
-
-        StartCoroutine(WaveLoop());
+       
     }
 
-
-    // Grid生成
+    // グリッド生成
     void CreateGrid()
     {
         grid = new Cell[width, height];
@@ -58,54 +40,23 @@ public bool moveSceneAfterLastWave = true;
             for (int y = 0; y < height; y++)
             {
                 grid[x, y] = new Cell();
-
-                grid[x, y].gridPos =
-                    new Vector2Int(x, y);
+                grid[x, y].gridPos = new Vector2Int(x, y);
             }
         }
     }
 
-    // Waveループ
-    IEnumerator WaveLoop()
+    // waveスポーン
+    public void SpawnWave(int wave)
     {
-        while (wave < wavePrefabs.Length)
-        {
-            wave++;
-
-            UpdateWaveUI();
-
-            ClearGrid();
-
-            SpawnWave();
-
-            float timer = timeBetweenWaves;
-
-            while (timer > 0)
-            {
-                timer -= Time.deltaTime;
-
-                UpdateTimerUI(timer);
-
-                timerFillImage.fillAmount =
-                    timer / timeBetweenWaves;
-
-                yield return null;
-            }
-            SceneManager.LoadScene("SkillTest");
-        }
-    }
-
-
-    // Waveスポーン
-    void SpawnWave()
-    {
-        GameObject prefab = GetPrefabForWave();
+        GameObject prefab = GetPrefabForWave(wave);
 
         if (prefab == null)
         {
             Debug.LogError("Prefab未設定");
             return;
         }
+
+        ClearGrid();
 
         for (int x = 0; x < width; x++)
         {
@@ -119,13 +70,8 @@ public bool moveSceneAfterLastWave = true;
         }
     }
 
-
     // 草スポーン
-    public void SpawnGrass(
-        int x,
-        int y,
-        GameObject prefab
-    )
+    public void SpawnGrass(int x, int y, GameObject prefab)
     {
         Vector3 pos = GridToWorld(x, y);
 
@@ -135,10 +81,12 @@ public bool moveSceneAfterLastWave = true;
         grid[x, y].currentObject = obj;
     }
 
-
-    // マス収穫
+    // 収穫
     public void HarvestCell(int x, int y)
     {
+        if (!IsInsideGrid(x, y))
+            return;
+
         Cell cell = grid[x, y];
 
         if (cell.currentObject == null)
@@ -155,13 +103,12 @@ public bool moveSceneAfterLastWave = true;
         cell.currentObject = null;
     }
 
-    // 範囲収穫
+    //　収穫する範囲
     public void HarvestArea(
         int startX,
         int startY,
         int sizeX,
-        int sizeY
-    )
+        int sizeY)
     {
         for (int x = startX; x < startX + sizeX; x++)
         {
@@ -172,9 +119,8 @@ public bool moveSceneAfterLastWave = true;
         }
     }
 
- 
     // 全削除
-    void ClearGrid()
+    public void ClearGrid()
     {
         for (int x = 0; x < width; x++)
         {
@@ -183,15 +129,14 @@ public bool moveSceneAfterLastWave = true;
                 if (grid[x, y].currentObject != null)
                 {
                     Destroy(grid[x, y].currentObject);
-
                     grid[x, y].currentObject = null;
                 }
             }
         }
     }
 
-    // WaveごとのPrefab
-    GameObject GetPrefabForWave()
+    // waveごとのPrefab
+    GameObject GetPrefabForWave(int wave)
     {
         if (wavePrefabs.Length == 0)
             return null;
@@ -209,11 +154,8 @@ public bool moveSceneAfterLastWave = true;
     // 座標変換
     public Vector2Int WorldToGrid(Vector3 worldPos)
     {
-        int x =
-            Mathf.FloorToInt(worldPos.x / cellSize);
-
-        int y =
-            Mathf.FloorToInt(worldPos.y / cellSize);
+        int x = Mathf.FloorToInt(worldPos.x / cellSize);
+        int y = Mathf.FloorToInt(worldPos.y / cellSize);
 
         return new Vector2Int(x, y);
     }
@@ -221,37 +163,17 @@ public bool moveSceneAfterLastWave = true;
     public Vector3 GridToWorld(int x, int y)
     {
         return new Vector3(
-    x * cellSize + cellSize * 0.5f,
-    y * cellSize + cellSize * 0.5f,
-    0
-);
+            x * cellSize + cellSize * 0.5f,
+            y * cellSize + cellSize * 0.5f,
+            0
+        );
     }
 
-    // 範囲内判定
     bool IsInsideGrid(int x, int y)
     {
         return x >= 0 &&
                y >= 0 &&
                x < width &&
                y < height;
-    }
-
-
-    // UI
-    void UpdateWaveUI()
-    {
-        if (waveText != null)
-        {
-            waveText.text = "Wave : " + wave;
-        }
-    }
-
-    void UpdateTimerUI(float time)
-    {
-        if (timerText != null)
-        {
-            timerText.text =
-                "Next : " + Mathf.Ceil(time) + "s";
-        }
     }
 }

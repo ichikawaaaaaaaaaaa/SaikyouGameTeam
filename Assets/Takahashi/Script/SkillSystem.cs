@@ -92,7 +92,7 @@ public class SkillSystem : MonoBehaviour
     // スキルポイント
     public int GetSkillPoint()
     {
-        return ScoreManager.instance.GetSkillPoint();
+        return ScoreManager.instance.GetTotalSkillPoint();
     }
 
     // 習得可能チェック

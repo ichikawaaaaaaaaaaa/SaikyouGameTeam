@@ -1,15 +1,28 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
+using UnityEngine.EventSystems;
+// スキルの状態
+public enum SkillState
+{
+    Locked,     // 押せない
+    Available,  // 押せる
+    Learned     // 習得済み
+}
 
 public class SkillParam : MonoBehaviour
 {
-    [SerializeField] private SkillSystem skillSystem;
-    [SerializeField] private SkillType type;
-    [SerializeField] private int spendPoint;
+    [SerializeField]
+    private SkillSystem skillSystem;
+
+    [SerializeField]
+    private SkillData skill;
 
     [Header("UI")]
-    [SerializeField] private TMP_Text text;
+    [SerializeField]
+    public Text text;
+
+    [SerializeField]
+    private Text descriptionText;
 
     private Button button;
 
@@ -17,25 +30,88 @@ public class SkillParam : MonoBehaviour
     {
         button = GetComponent<Button>();
 
-        // SkillSystem未設定対策（シーン跨ぎ対応）
         if (skillSystem == null)
-        {
             skillSystem = SkillSystem.instance;
-        }
     }
 
     void Start()
     {
         SetText();
+
         CheckButtonOnOff();
+    }
+    public SkillState GetState()
+    {
+        if (skillSystem.HasSkill(skill))
+            return SkillState.Learned;
+
+        if (skillSystem.CanLearnSkill(skill))
+            return SkillState.Available;
+
+        return SkillState.Locked;
+    }
+
+    public void Refresh()
+    {
+        SkillState state = GetState();
+
+        switch (state)
+        {
+            case SkillState.Locked:
+
+                button.interactable = false;
+
+                ChangeButtonColor(
+                    new Color(
+                        0.5f,
+                        0.5f,
+                        0.5f));
+
+                break;
+
+            case SkillState.Available:
+
+                button.interactable = true;
+
+                ChangeButtonColor(
+                    Color.white);
+
+                break;
+
+            case SkillState.Learned:
+
+                button.interactable = false;
+
+                ChangeButtonColor(
+                    Color.green);
+
+                break;
+        }
+    }
+
+    public void OnPointerEnter(
+    PointerEventData eventData)
+    {
+        if (descriptionText == null)
+            return;
+
+        descriptionText.text =
+            skill.description;
+    }
+
+    public void OnPointerExit(
+        PointerEventData eventData)
+    {
+        if (descriptionText == null)
+            return;
+
+        descriptionText.text = "";
     }
 
     public void OnClick()
     {
         if (skillSystem == null)
-        {
             skillSystem = SkillSystem.instance;
-        }
 
         if (skillSystem == null)
         {
@@ -43,84 +119,104 @@ public class SkillParam : MonoBehaviour
             return;
         }
 
-        if (skillSystem.IsSkill(type))
+        if (!skillSystem.CanLearnSkill(skill))
         {
-            text.text = "すでに習得済みです";
+            text.text =
+                "スキル条件またはポイント不足";
+
             return;
         }
 
-        if (!skillSystem.CanLearnSkill(type, spendPoint))
+        skillSystem.LearnSkill(skill);
+
+        text.text =
+            skill.skillName +
+            " を習得しました";
+
+        UpdateAllSkillButtons();
+    }
+    void UpdateAllSkillButtons()
+    {
+        SkillParam[] skills =
+            FindObjectsOfType<SkillParam>();
+
+        foreach (var s in skills)
         {
-            text.text = "スキル条件またはポイント不足";
-            return;
+            s.Refresh();
         }
-
-        skillSystem.LearnSkill(type, spendPoint);
-
-        ChangeButtonColor(new Color(0f, 0.6f, 1f, 1f));
-        text.text = $"{type} を習得しました";
-
-        if (Playertest.instance != null)
-        {
-            Playertest.instance.UpdateSkillEffect();
-        }
-
-        CheckButtonOnOff();
     }
 
     public void CheckButtonOnOff()
     {
-        if (skillSystem == null) return;
+        if (skillSystem == null)
+            return;
 
-        if (skillSystem.IsSkill(type))
+        if (skillSystem.HasSkill(skill))
         {
-            ChangeButtonColor(new Color(0.3f, 0.3f, 0.3f, 1f));
+            ChangeButtonColor(
+                new Color(
+                    0.3f,
+                    0.3f,
+                    0.3f,
+                    1f));
+
             button.interactable = false;
+
             return;
         }
 
-        if (!skillSystem.CanLearnSkill(type, spendPoint))
+        if (!skillSystem.CanLearnSkill(skill))
         {
-            ChangeButtonColor(new Color(0.7f, 0.7f, 0.7f, 1f));
+            ChangeButtonColor(
+                new Color(
+                    0.7f,
+                    0.7f,
+                    0.7f,
+                    1f));
+
             button.interactable = false;
         }
         else
         {
-            ChangeButtonColor(Color.white);
+            ChangeButtonColor(
+                Color.white);
+
             button.interactable = true;
         }
     }
 
     public void SetText()
     {
-        if (text == null) return;
+        if (text == null || skill == null)
+            return;
 
         text.text =
-            $"{type}\n消費スキルポイント：{spendPoint}";
+            $"{skill.skillName}\n" +
+            $"消費SP:{skill.cost}";
     }
 
     public void ResetText()
     {
         if (text != null)
-        {
             text.text = "";
-        }
     }
 
-    public void ChangeButtonColor(Color color)
+    public void ChangeButtonColor(
+        Color color)
     {
-        if (button == null) return;
+        Image img =
+            button.GetComponent<Image>();
 
-        Image img = button.GetComponent<Image>();
         if (img != null)
-        {
             img.color = color;
-        }
 
-        ColorBlock cb = button.colors;
+        ColorBlock cb =
+            button.colors;
+
         cb.normalColor = color;
         cb.selectedColor = color;
         cb.pressedColor = color;
+
         button.colors = cb;
     }
 }

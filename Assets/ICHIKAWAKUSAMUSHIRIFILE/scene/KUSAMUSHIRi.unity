@@ -546,26 +546,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
---- !u!1 &685572002 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6497391293358132132, guid: 345658f003a5d9a4bb7cfd7812a942bf, type: 3}
-  m_PrefabInstance: {fileID: 2304996250637879588}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &685572005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 685572002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c2cc7e26bfd1bf49a010bd4393adcda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Playertest
-  harvestSizeX: 1
-  harvestSizeY: 1
-  cooldown: 1
 --- !u!1 &836333476
 GameObject:
   m_ObjectHideFlags: 0
@@ -1213,8 +1193,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3656385078f7724e8a764dbfb052400, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIRegister
-  grassCountText: {fileID: 603317566}
-  skillPointText: {fileID: 1589677239}
 --- !u!1 &2004966465
 GameObject:
   m_ObjectHideFlags: 0
@@ -1568,7 +1546,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4498057769984441655, guid: 345658f003a5d9a4bb7cfd7812a942bf, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4498057769984441655, guid: 345658f003a5d9a4bb7cfd7812a942bf, type: 3}
       propertyPath: harvestSizeX
@@ -1585,10 +1563,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6497391293358132132, guid: 345658f003a5d9a4bb7cfd7812a942bf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 685572005}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 345658f003a5d9a4bb7cfd7812a942bf, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

@@ -11,6 +11,11 @@ public class Player: MonoBehaviour
 
     private float nextHarvestTime = 0f;
 
+
+    void Start()
+    {
+        ApplyLearnedSkills();//取ったスキル
+    }
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -27,6 +32,14 @@ public class Player: MonoBehaviour
 
         if (cooldown < 0.1f)
             cooldown = 0.1f;
+    }
+
+    private void ApplyLearnedSkills()
+    {
+        foreach (var skill in SkillSystem.instance.GetLearnedSkills())
+        {
+            ApplySkill(skill);
+        }//スキル内容を取る
     }
     void ClickGrid()
     {
@@ -55,5 +68,7 @@ public class Player: MonoBehaviour
             harvestSizeX,
             harvestSizeY
         );
+
     }
+
 }

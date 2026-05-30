@@ -6,7 +6,7 @@ public class SkillTreeManager : MonoBehaviour
 
     public void UnlockSkill(SkillData skill)
     {
-        player.ApplySkill(skill);
+       
 
         Debug.Log($"{skill.skillName} K“¾");
     }

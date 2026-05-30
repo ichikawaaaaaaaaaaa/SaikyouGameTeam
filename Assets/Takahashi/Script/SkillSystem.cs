@@ -1,16 +1,18 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
-
+using TMPro;
 public class SkillSystem : MonoBehaviour
 {
     public static SkillSystem instance;
-
+   
     [SerializeField]
     private List<SkillData> learnedSkills =
         new List<SkillData>();
 
-    public Text skillText;
+
+
+    public TMP_Text skillText;
 
     void Awake()
     {
@@ -22,7 +24,7 @@ public class SkillSystem : MonoBehaviour
 
         instance = this;
 
-       // DontDestroyOnLoad(gameObject);
+       //DontDestroyOnLoad(gameObject);
     }
 
     void Start()
@@ -30,6 +32,11 @@ public class SkillSystem : MonoBehaviour
         UpdateUI();
     }
 
+
+    public List<SkillData> GetLearnedSkills()
+    {
+        return learnedSkills;
+    }
     public bool HasSkill(SkillData skill)
     {
         return learnedSkills.Contains(skill);
@@ -57,15 +64,9 @@ public class SkillSystem : MonoBehaviour
         if (!CanLearnSkill(skill))
             return;
 
-        int currentSP = GetSkillPoint();
-
-        if (currentSP < skill.cost)
-            return;
-
         learnedSkills.Add(skill);
 
-        ScoreManager.instance.AddSkillPoint(
-            -skill.cost);
+        ScoreManager.instance.AddSkillPoint(-skill.cost);
 
         UpdateUI();
     }
@@ -80,9 +81,7 @@ public class SkillSystem : MonoBehaviour
     {
         if (skillText != null)
         {
-            skillText.text =
-                "スキルポイント：" +
-                GetSkillPoint();
+            skillText.text = "SkillPoint" + ScoreManager.instance.GetWaveSkillPoint().ToString();
         }
     }
 }

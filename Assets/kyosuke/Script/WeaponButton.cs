@@ -10,7 +10,8 @@ public class WeaponButton : MonoBehaviour
 
     public void OnMouseDown()
     {
-        weaponSelectUI.SetActive(false);
+        weaponSelectUI.SetActive(false); 
+       
 
         if (unlocked)
         {

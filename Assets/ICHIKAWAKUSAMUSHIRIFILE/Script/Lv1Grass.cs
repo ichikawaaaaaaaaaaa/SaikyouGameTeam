@@ -9,6 +9,8 @@ public class Lv1Grass : MonoBehaviour
 
     private SpriteRenderer sr;
 
+    public AudioClip seClip;
+
     void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
@@ -28,6 +30,8 @@ public class Lv1Grass : MonoBehaviour
         if (clickedSprite != null)
         {
             sr.sprite = clickedSprite;
+            //SE
+            AudioSource.PlayClipAtPoint(seClip, Camera.main.transform.position);
         }
 
         Destroy(gameObject, 0.1f);

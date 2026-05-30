@@ -19,6 +19,15 @@ public class Player: MonoBehaviour
         }
     }
 
+    public void ApplySkill(SkillData skill)
+    {
+        harvestSizeX += skill.addHavestSizeX;
+        harvestSizeY += skill.addHavestSizeY;
+        cooldown -= skill.cooldownReduction;
+
+        if (cooldown < 0.1f)
+            cooldown = 0.1f;
+    }
     void ClickGrid()
     {
         // クールタイムチェック

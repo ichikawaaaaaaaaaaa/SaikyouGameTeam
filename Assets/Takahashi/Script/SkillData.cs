@@ -5,14 +5,15 @@ using System.Collections.Generic;
 public class SkillData : ScriptableObject
 {
     public string skillName;
-
     public string description;
-
     public int cost;
-
-    
 
     public List<SkillData> requiredSkills;
 
     public Sprite icon;
+
+    [Header("Œø‰Ê")]
+    public int addHarvestSizeX;
+    public int addHarvestSizeY;
+    public float cooldownReduction;
 }

@@ -1,13 +1,23 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class Onemore : MonoBehaviour
 {
-    // ƒ{ƒ^ƒ“‚ª‰Ÿ‚³‚ê‚½‚ÉÀs
+    public AudioSource audioSource;
+    public AudioClip clickSE;
+
     public void OnMouseDown()
     {
-       
+        StartCoroutine(ChangeScene());
+    }
+
+    IEnumerator ChangeScene()
+    {
+        audioSource.PlayOneShot(clickSE);
+
+        yield return new WaitForSeconds(0.3f);
+
         SceneManager.LoadScene("Game Scene");
     }
 }
-

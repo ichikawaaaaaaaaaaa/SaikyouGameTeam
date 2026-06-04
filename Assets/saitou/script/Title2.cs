@@ -2,12 +2,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class Title : MonoBehaviour
+public class Title2 : MonoBehaviour
 {
     public AudioSource audioSource;
     public AudioClip clickSE;
 
-    public void TitleDown()
+    public void Title2Down()
     {
         StartCoroutine(ChangeScene());
     }
@@ -21,4 +21,3 @@ public class Title : MonoBehaviour
         SceneManager.LoadScene("Title Scene");
     }
 }
-

@@ -43,7 +43,6 @@ public class Player: MonoBehaviour
     }
     void ClickGrid()
     {
-        // クールタイムチェック
         if (Time.time < nextHarvestTime)
         {
             Debug.Log("クールタイム中");
@@ -52,23 +51,32 @@ public class Player: MonoBehaviour
 
         nextHarvestTime = Time.time + cooldown;
 
-        Vector3 mouseWorld =
-            Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
+        Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mouseWorld.z = 0;
 
-        Vector2Int gridPos =
+        Vector2Int center =
             SpawnManager.instance.WorldToGrid(mouseWorld);
 
-        Debug.Log($"クリックGrid: {gridPos}");
+        Debug.Log($"クリックGrid中心: {center}");
 
-        SpawnManager.instance.HarvestArea(
-            gridPos.x,
-            gridPos.y,
-            harvestSizeX,
-            harvestSizeY
-        );
+        int halfX = harvestSizeX / 2;
+        int halfY = harvestSizeY / 2;
 
+        for (int x = -halfX; x <= halfX; x++)
+        {
+            for (int y = -halfY; y <= halfY; y++)
+            {
+                int targetX = center.x + x;
+                int targetY = center.y + y;
+
+                SpawnManager.instance.HarvestArea(
+                    targetX,
+                    targetY,
+                    1,
+                    1
+                );
+            }
+        }
     }
 
 }

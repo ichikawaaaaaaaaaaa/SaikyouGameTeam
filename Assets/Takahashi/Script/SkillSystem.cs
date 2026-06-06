@@ -1,18 +1,13 @@
 using UnityEngine;
-using UnityEngine.UI;
 using System.Collections.Generic;
-using TMPro;
+
 public class SkillSystem : MonoBehaviour
 {
     public static SkillSystem instance;
-   
+
     [SerializeField]
     private List<SkillData> learnedSkills =
         new List<SkillData>();
-
-
-
-    public TMP_Text skillText;
 
     void Awake()
     {
@@ -24,64 +19,89 @@ public class SkillSystem : MonoBehaviour
 
         instance = this;
 
-       //DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject);
     }
 
-    void Start()
+    public bool HasSkill(
+        SkillData skill)
     {
-        UpdateUI();
+        return learnedSkills
+            .Contains(skill);
     }
 
+    public bool CanLearnSkill(
+        SkillData skill)
+    {
+        Debug.Log(
+        "CHECK " +
+        skill.skillName);
+        //if (skill == null)
+        //return false;
 
-    public List<SkillData> GetLearnedSkills()
-    {
-        return learnedSkills;
-    }
-    public bool HasSkill(SkillData skill)
-    {
-        return learnedSkills.Contains(skill);
-    }
-
-    public bool CanLearnSkill(SkillData skill)
-    {
         if (HasSkill(skill))
+        {
+            Debug.Log("already");
             return false;
+        }
 
-        if (GetSkillPoint() < skill.cost)
+        if (GetSkillPoint()< skill.cost)
+        {
+            Debug.Log("SP•s‘«");
             return false;
+        }
 
         foreach (var req in skill.requiredSkills)
         {
+            Debug.Log(
+                req.skillName +
+                ":" +
+                HasSkill(req));
+
             if (!HasSkill(req))
                 return false;
         }
 
+        //if (skill.requiredSkills
+        //    != null)
+        //{
+        //    foreach (
+        //        var req
+        //        in skill.requiredSkills)
+        //    {
+        //        if (!HasSkill(req))
+        //            return false;
+        //    }
+        //}
+
         return true;
     }
 
-    public void LearnSkill(SkillData skill)
+    public void LearnSkill(
+        SkillData skill)
     {
         if (!CanLearnSkill(skill))
             return;
 
         learnedSkills.Add(skill);
 
-        ScoreManager.instance.AddSkillPoint(-skill.cost);
-
-        UpdateUI();
+        ScoreManager.instance
+            .AddSkillPoint(
+            -skill.cost);
     }
 
     public int GetSkillPoint()
     {
+        if (ScoreManager.instance
+            == null)
+            return 0;
+
         return ScoreManager.instance
             .GetTotalSkillPoint();
     }
 
-    public void UpdateUI()
+    public List<SkillData>
+        GetLearnedSkills()
     {
-        if (skillText != null)
-        {
-            skillText.text = "SkillPoint" + ScoreManager.instance.GetWaveSkillPoint().ToString();
-        }
+        return learnedSkills;
     }
 }

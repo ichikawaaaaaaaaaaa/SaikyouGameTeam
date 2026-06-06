@@ -9,9 +9,10 @@ public enum SkillState
     Learned     // èKìæçœÇ›
 }
 
-public class SkillParam : MonoBehaviour
+public class SkillParam : MonoBehaviour,IPointerEnterHandler,
+IPointerExitHandler
 {
-    [SerializeField]
+    
     private SkillSystem skillSystem;
 
     [SerializeField]
@@ -30,15 +31,17 @@ public class SkillParam : MonoBehaviour
     {
         button = GetComponent<Button>();
 
-        if (skillSystem == null)
-            skillSystem = SkillSystem.instance;
+       
     }
 
     void Start()
     {
+        skillSystem =
+        SkillSystem.instance;
+
         SetText();
 
-        CheckButtonOnOff();
+        Refresh();
     }
     public SkillState GetState()
     {
@@ -55,6 +58,10 @@ public class SkillParam : MonoBehaviour
     {
         SkillState state = GetState();
 
+        Debug.Log(
+        skill.skillName +
+        " state = " + state);
+
         switch (state)
         {
             case SkillState.Locked:
@@ -62,10 +69,8 @@ public class SkillParam : MonoBehaviour
                 button.interactable = false;
 
                 ChangeButtonColor(
-                    new Color(
-                        0.5f,
-                        0.5f,
-                        0.5f));
+                   Color.gray
+                        );
 
                 break;
 
@@ -146,45 +151,7 @@ public class SkillParam : MonoBehaviour
         }
     }
 
-    public void CheckButtonOnOff()
-    {
-        if (skillSystem == null)
-            return;
-
-        if (skillSystem.HasSkill(skill))
-        {
-            ChangeButtonColor(
-                new Color(
-                    0.3f,
-                    0.3f,
-                    0.3f,
-                    1f));
-
-            button.interactable = false;
-
-            return;
-        }
-
-        if (!skillSystem.CanLearnSkill(skill))
-        {
-            ChangeButtonColor(
-                new Color(
-                    0.7f,
-                    0.7f,
-                    0.7f,
-                    1f));
-
-            button.interactable = false;
-        }
-        else
-        {
-            ChangeButtonColor(
-                Color.white);
-
-            button.interactable = true;
-        }
-    }
-
+    
     public void SetText()
     {
         if (text == null || skill == null)

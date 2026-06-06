@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class WeaponButton : MonoBehaviour
 {
@@ -8,10 +9,21 @@ public class WeaponButton : MonoBehaviour
 
     public bool unlocked;
 
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip clickSE;
+
     public void OnMouseDown()
     {
-        weaponSelectUI.SetActive(false); 
-       
+        StartCoroutine(ClickProcess());
+    }
+
+    private IEnumerator ClickProcess()
+    {
+        audioSource.PlayOneShot(clickSE);
+
+        yield return new WaitForSeconds(0.1f);
+
+        weaponSelectUI.SetActive(false);
 
         if (unlocked)
         {

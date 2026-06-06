@@ -271,7 +271,6 @@ GameObject:
   - component: {fileID: 242206608}
   - component: {fileID: 242206607}
   - component: {fileID: 242206612}
-  - component: {fileID: 242206613}
   m_Layer: 5
   m_Name: END
   m_TagString: Untagged
@@ -357,6 +356,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d48dc1c587fc5b945b7ebcf3c0a89f40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::END
+  audioSource: {fileID: 242206612}
+  clickSE: {fileID: 8300000, guid: a59e6916185652f4a8a92b3deefccbef, type: 3}
 --- !u!114 &242206609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -403,20 +404,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 242206608}
         m_TargetAssemblyTypeName: END, Assembly-CSharp
-        m_MethodName: OnMouseDown
+        m_MethodName: OnClickEndButton
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11500000, guid: debef353a7ce5a845bba40d8f52301c9, type: 3}
-        m_TargetAssemblyTypeName: UnityEditor.MonoScript, UnityEditor.CoreModule
-        m_MethodName: set_name
-        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -560,18 +549,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &242206613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 242206605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: debef353a7ce5a845bba40d8f52301c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Audioo
 --- !u!1 &506801336
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,10 +561,9 @@ GameObject:
   - component: {fileID: 506801342}
   - component: {fileID: 506801341}
   - component: {fileID: 506801340}
-  - component: {fileID: 506801339}
+  - component: {fileID: 506801344}
   - component: {fileID: 506801338}
   - component: {fileID: 506801343}
-  - component: {fileID: 506801344}
   m_Layer: 5
   m_Name: START
   m_TagString: Untagged
@@ -661,18 +637,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &506801339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 506801336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c97830aba5015c419bf0a499ba39454, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
 --- !u!114 &506801340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -717,9 +681,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 506801339}
-        m_TargetAssemblyTypeName: NewMonoBehaviourScript, Assembly-CSharp
-        m_MethodName: OnMouseDown
+      - m_Target: {fileID: 506801344}
+        m_TargetAssemblyTypeName: START, Assembly-CSharp
+        m_MethodName: OnClickSTARTButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -727,18 +691,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11500000, guid: debef353a7ce5a845bba40d8f52301c9, type: 3}
-        m_TargetAssemblyTypeName: UnityEditor.MonoScript, UnityEditor.CoreModule
-        m_MethodName: set_name
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: PlaySE
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &506801341
@@ -885,9 +837,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 506801336}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: debef353a7ce5a845bba40d8f52301c9, type: 3}
+  m_Script: {fileID: 11500000, guid: 4c97830aba5015c419bf0a499ba39454, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Audioo
+  m_EditorClassIdentifier: Assembly-CSharp::START
+  audioSource: {fileID: 506801343}
+  buttonSE: {fileID: 8300000, guid: a59e6916185652f4a8a92b3deefccbef, type: 3}
 --- !u!1 &696581691
 GameObject:
   m_ObjectHideFlags: 0

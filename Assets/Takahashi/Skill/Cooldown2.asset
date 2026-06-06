@@ -18,6 +18,6 @@ MonoBehaviour:
   requiredSkills:
   - {fileID: 11400000, guid: 74832c6676c285241a8f99434e7783f9, type: 2}
   icon: {fileID: 0}
-  addHarvestSizeX: 0
-  addHarvestSizeY: 0
-  cooldownReduction: 0
+  addHarvestSizeX: 100
+  addHarvestSizeY: 100
+  cooldownReduction: 100

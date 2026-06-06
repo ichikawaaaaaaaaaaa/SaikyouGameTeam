@@ -17,6 +17,6 @@ MonoBehaviour:
   cost: 10
   requiredSkills: []
   icon: {fileID: 0}
-  addHarvestSizeX: 90
-  addHarvestSizeY: 90
+  addHarvestSizeX: 1
+  addHarvestSizeY: 1
   cooldownReduction: 0.1

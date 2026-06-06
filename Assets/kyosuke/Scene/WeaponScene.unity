@@ -133,7 +133,6 @@ GameObject:
   - component: {fileID: 31621853}
   - component: {fileID: 31621859}
   - component: {fileID: 31621857}
-  - component: {fileID: 31621861}
   - component: {fileID: 31621860}
   m_Layer: 5
   m_Name: CloseButton
@@ -218,18 +217,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 11500000, guid: cc8f499ab58f55a48bebd79f5fbacbbd, type: 3}
-        m_TargetAssemblyTypeName: No, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &31621854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,6 +270,8 @@ MonoBehaviour:
   weaponSelectUI: {fileID: 1143087854}
   confirmWindow: {fileID: 1063921130}
   lockWindow: {fileID: 612210663}
+  audioSource: {fileID: 31621860}
+  clickSE: {fileID: 8300000, guid: a59e6916185652f4a8a92b3deefccbef, type: 3}
 --- !u!61 &31621859
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -426,18 +415,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &31621861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 31621850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc8f499ab58f55a48bebd79f5fbacbbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Audio
 --- !u!1 &36956932
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,7 +429,6 @@ GameObject:
   - component: {fileID: 36956936}
   - component: {fileID: 36956935}
   - component: {fileID: 36956934}
-  - component: {fileID: 36956941}
   - component: {fileID: 36956940}
   m_Layer: 5
   m_Name: Button9
@@ -497,6 +473,8 @@ MonoBehaviour:
   confirmWindow: {fileID: 1063921130}
   lockWindow: {fileID: 612210663}
   unlocked: 0
+  audioSource: {fileID: 36956940}
+  clickSE: {fileID: 8300000, guid: a59e6916185652f4a8a92b3deefccbef, type: 3}
 --- !u!61 &36956935
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -594,18 +572,6 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11500000, guid: cc8f499ab58f55a48bebd79f5fbacbbd, type: 3}
-        m_TargetAssemblyTypeName: WeaponButton, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -746,18 +712,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &36956941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36956932}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc8f499ab58f55a48bebd79f5fbacbbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Audio
 --- !u!1 &77021756
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,7 +863,6 @@ GameObject:
   - component: {fileID: 223016019}
   - component: {fileID: 223016018}
   - component: {fileID: 223016017}
-  - component: {fileID: 223016024}
   - component: {fileID: 223016023}
   m_Layer: 5
   m_Name: Button1
@@ -954,6 +907,8 @@ MonoBehaviour:
   confirmWindow: {fileID: 1063921130}
   lockWindow: {fileID: 612210663}
   unlocked: 0
+  audioSource: {fileID: 223016023}
+  clickSE: {fileID: 8300000, guid: a59e6916185652f4a8a92b3deefccbef, type: 3}
 --- !u!61 &223016018
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1048,18 +1003,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: WeaponButton, Assembly-CSharp
         m_MethodName: OnMouseDown
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11500000, guid: cc8f499ab58f55a48bebd79f5fbacbbd, type: 3}
-        m_TargetAssemblyTypeName: UnityEditor.MonoScript, UnityEditor.CoreModule
-        m_MethodName: set_name
-        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1203,18 +1146,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &223016024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 223016015}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc8f499ab58f55a48bebd79f5fbacbbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Audio
 --- !u!1 &266252340
 GameObject:
   m_ObjectHideFlags: 0
@@ -1229,7 +1160,6 @@ GameObject:
   - component: {fileID: 266252344}
   - component: {fileID: 266252343}
   - component: {fileID: 266252342}
-  - component: {fileID: 266252349}
   - component: {fileID: 266252348}
   m_Layer: 5
   m_Name: Button3
@@ -1274,6 +1204,8 @@ MonoBehaviour:
   confirmWindow: {fileID: 1063921130}
   lockWindow: {fileID: 612210663}
   unlocked: 0
+  audioSource: {fileID: 266252348}
+  clickSE: {fileID: 8300000, guid: a59e6916185652f4a8a92b3deefccbef, type: 3}
 --- !u!61 &266252343
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1371,18 +1303,6 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11500000, guid: cc8f499ab58f55a48bebd79f5fbacbbd, type: 3}
-        m_TargetAssemblyTypeName: WeaponButton, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1523,18 +1443,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &266252349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 266252340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc8f499ab58f55a48bebd79f5fbacbbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Audio
 --- !u!1 &286093777
 GameObject:
   m_ObjectHideFlags: 0
@@ -1549,7 +1457,6 @@ GameObject:
   - component: {fileID: 286093779}
   - component: {fileID: 286093783}
   - component: {fileID: 286093782}
-  - component: {fileID: 286093785}
   - component: {fileID: 286093784}
   m_Layer: 5
   m_Name: YesButton
@@ -1622,13 +1529,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: cc8f499ab58f55a48bebd79f5fbacbbd, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 286093782}
+        m_TargetAssemblyTypeName: YES, Assembly-CSharp
+        m_MethodName: OnMouseDown
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1684,6 +1591,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31ef067609a74d44e961164d295a93fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::YES
+  audioSource: {fileID: 286093784}
+  clickSE: {fileID: 8300000, guid: a59e6916185652f4a8a92b3deefccbef, type: 3}
 --- !u!61 &286093783
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1827,18 +1736,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &286093785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 286093777}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc8f499ab58f55a48bebd79f5fbacbbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Audio
 --- !u!1 &300528552
 GameObject:
   m_ObjectHideFlags: 0
@@ -1853,7 +1750,6 @@ GameObject:
   - component: {fileID: 300528554}
   - component: {fileID: 300528558}
   - component: {fileID: 300528557}
-  - component: {fileID: 300528560}
   - component: {fileID: 300528559}
   m_Layer: 5
   m_Name: NoButton
@@ -1926,9 +1822,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: cc8f499ab58f55a48bebd79f5fbacbbd, type: 3}
+      - m_Target: {fileID: 300528557}
         m_TargetAssemblyTypeName: No, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: OnMouseDown
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1991,6 +1887,8 @@ MonoBehaviour:
   weaponSelectUI: {fileID: 1143087854}
   confirmWindow: {fileID: 1063921130}
   lockWindow: {fileID: 612210663}
+  audioSource: {fileID: 300528559}
+  clickSE: {fileID: 8300000, guid: a59e6916185652f4a8a92b3deefccbef, type: 3}
 --- !u!61 &300528558
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2134,18 +2032,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &300528560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 300528552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc8f499ab58f55a48bebd79f5fbacbbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Audio
 --- !u!1 &382320972
 GameObject:
   m_ObjectHideFlags: 0
@@ -2705,7 +2591,6 @@ GameObject:
   - component: {fileID: 751135599}
   - component: {fileID: 751135598}
   - component: {fileID: 751135597}
-  - component: {fileID: 751135604}
   - component: {fileID: 751135603}
   m_Layer: 5
   m_Name: Button2
@@ -2750,6 +2635,8 @@ MonoBehaviour:
   confirmWindow: {fileID: 1063921130}
   lockWindow: {fileID: 612210663}
   unlocked: 0
+  audioSource: {fileID: 751135603}
+  clickSE: {fileID: 8300000, guid: a59e6916185652f4a8a92b3deefccbef, type: 3}
 --- !u!61 &751135598
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2847,18 +2734,6 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11500000, guid: cc8f499ab58f55a48bebd79f5fbacbbd, type: 3}
-        m_TargetAssemblyTypeName: WeaponButton, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2999,18 +2874,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &751135604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 751135595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc8f499ab58f55a48bebd79f5fbacbbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Audio
 --- !u!1 &753755294
 GameObject:
   m_ObjectHideFlags: 0
@@ -3162,7 +3025,6 @@ GameObject:
   - component: {fileID: 756565151}
   - component: {fileID: 756565150}
   - component: {fileID: 756565149}
-  - component: {fileID: 756565156}
   - component: {fileID: 756565155}
   m_Layer: 5
   m_Name: Button8
@@ -3207,6 +3069,8 @@ MonoBehaviour:
   confirmWindow: {fileID: 1063921130}
   lockWindow: {fileID: 612210663}
   unlocked: 0
+  audioSource: {fileID: 756565155}
+  clickSE: {fileID: 8300000, guid: a59e6916185652f4a8a92b3deefccbef, type: 3}
 --- !u!61 &756565150
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3304,18 +3168,6 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11500000, guid: cc8f499ab58f55a48bebd79f5fbacbbd, type: 3}
-        m_TargetAssemblyTypeName: WeaponButton, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3456,18 +3308,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &756565156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 756565147}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc8f499ab58f55a48bebd79f5fbacbbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Audio
 --- !u!1 &772013270
 GameObject:
   m_ObjectHideFlags: 0
@@ -3584,7 +3424,6 @@ GameObject:
   - component: {fileID: 823906768}
   - component: {fileID: 823906767}
   - component: {fileID: 823906766}
-  - component: {fileID: 823906773}
   - component: {fileID: 823906772}
   m_Layer: 5
   m_Name: Button7
@@ -3629,6 +3468,8 @@ MonoBehaviour:
   confirmWindow: {fileID: 1063921130}
   lockWindow: {fileID: 612210663}
   unlocked: 0
+  audioSource: {fileID: 823906772}
+  clickSE: {fileID: 8300000, guid: a59e6916185652f4a8a92b3deefccbef, type: 3}
 --- !u!61 &823906767
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3726,18 +3567,6 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11500000, guid: cc8f499ab58f55a48bebd79f5fbacbbd, type: 3}
-        m_TargetAssemblyTypeName: WeaponButton, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3878,18 +3707,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &823906773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 823906764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc8f499ab58f55a48bebd79f5fbacbbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Audio
 --- !u!1 &831867749
 GameObject:
   m_ObjectHideFlags: 0
@@ -3904,7 +3721,6 @@ GameObject:
   - component: {fileID: 831867753}
   - component: {fileID: 831867752}
   - component: {fileID: 831867751}
-  - component: {fileID: 831867758}
   - component: {fileID: 831867757}
   m_Layer: 5
   m_Name: Button4
@@ -3949,6 +3765,8 @@ MonoBehaviour:
   confirmWindow: {fileID: 1063921130}
   lockWindow: {fileID: 612210663}
   unlocked: 0
+  audioSource: {fileID: 831867757}
+  clickSE: {fileID: 8300000, guid: a59e6916185652f4a8a92b3deefccbef, type: 3}
 --- !u!61 &831867752
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4046,18 +3864,6 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11500000, guid: cc8f499ab58f55a48bebd79f5fbacbbd, type: 3}
-        m_TargetAssemblyTypeName: WeaponButton, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4198,18 +4004,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &831867758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 831867749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc8f499ab58f55a48bebd79f5fbacbbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AudioPlayer
 --- !u!1 &923848847
 GameObject:
   m_ObjectHideFlags: 0
@@ -4667,7 +4461,6 @@ GameObject:
   - component: {fileID: 1127252803}
   - component: {fileID: 1127252802}
   - component: {fileID: 1127252801}
-  - component: {fileID: 1127252808}
   - component: {fileID: 1127252807}
   m_Layer: 5
   m_Name: Button5
@@ -4712,6 +4505,8 @@ MonoBehaviour:
   confirmWindow: {fileID: 1063921130}
   lockWindow: {fileID: 612210663}
   unlocked: 0
+  audioSource: {fileID: 1127252807}
+  clickSE: {fileID: 8300000, guid: a59e6916185652f4a8a92b3deefccbef, type: 3}
 --- !u!61 &1127252802
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4809,18 +4604,6 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11500000, guid: cc8f499ab58f55a48bebd79f5fbacbbd, type: 3}
-        m_TargetAssemblyTypeName: WeaponButton, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4961,18 +4744,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1127252808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1127252799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc8f499ab58f55a48bebd79f5fbacbbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Audio
 --- !u!1 &1143087854
 GameObject:
   m_ObjectHideFlags: 0
@@ -5801,7 +5572,6 @@ GameObject:
   - component: {fileID: 1799676589}
   - component: {fileID: 1799676588}
   - component: {fileID: 1799676587}
-  - component: {fileID: 1799676594}
   - component: {fileID: 1799676593}
   m_Layer: 5
   m_Name: Button6
@@ -5846,6 +5616,8 @@ MonoBehaviour:
   confirmWindow: {fileID: 1063921130}
   lockWindow: {fileID: 612210663}
   unlocked: 0
+  audioSource: {fileID: 1799676593}
+  clickSE: {fileID: 8300000, guid: a59e6916185652f4a8a92b3deefccbef, type: 3}
 --- !u!61 &1799676588
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5943,18 +5715,6 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11500000, guid: cc8f499ab58f55a48bebd79f5fbacbbd, type: 3}
-        m_TargetAssemblyTypeName: WeaponButton, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6095,18 +5855,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1799676594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1799676585}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc8f499ab58f55a48bebd79f5fbacbbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Audio
 --- !u!1 &1914664171
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ public class ScoreManager : MonoBehaviour
     private int totalSkillPoint = 0;
     private int waveSkillPoint = 0;
 
+
     void Awake()
     {
         if (instance != null && instance != this)
@@ -24,6 +25,7 @@ public class ScoreManager : MonoBehaviour
     public void AddScore(int amount)
     {
         destroyedCount += amount;
+
     }
 
     public int GetScore()
@@ -53,4 +55,6 @@ public class ScoreManager : MonoBehaviour
     {
         waveSkillPoint = 0;
     }
+
+    
 }

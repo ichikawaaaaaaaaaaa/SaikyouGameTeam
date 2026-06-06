@@ -19,6 +19,9 @@ public class Grass : MonoBehaviour
         ScoreManager.instance.AddScore(score);
         ScoreManager.instance.AddSkillPoint(skillPoint);
 
+        KusamushiriCounter.instance.AddGrass(score);
+        KusamushiriCounter.instance.AddSkillPoint(skillPoint);
+
         if (clickedSprite != null)
             sr.sprite = clickedSprite;
 

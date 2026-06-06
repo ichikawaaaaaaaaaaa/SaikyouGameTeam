@@ -176,4 +176,21 @@ public class SpawnManager : MonoBehaviour
                x < width &&
                y < height;
     }
+
+    //@‘‚ª‚ ‚Æ‚Ç‚ê‚­‚ç‚¢‚ ‚é‚©
+    public int GetRemainingObjects()
+    {
+        int count = 0;
+
+        for (int x = 0; x < width; x++)
+        {
+            for (int y = 0; y < height; y++)
+            {
+                if (grid[x, y].currentObject != null)
+                    count++;
+            }
+        }
+
+        return count;
+    }
 }

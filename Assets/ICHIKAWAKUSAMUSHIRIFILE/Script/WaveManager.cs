@@ -30,13 +30,18 @@ public class WaveManager : MonoBehaviour
 
         while (wave < spawnManager.wavePrefabs.Length)
         {
+
+            KusamushiriCounter.instance.ResetWaveData();
+
             UpdateWaveUI();
 
             spawnManager.SpawnWave(wave + 1);
 
             float timer = timeBetweenWaves;
 
-            while (timer > 0)
+            bool clearedByKill = false;
+
+            while (true)
             {
                 timer -= Time.deltaTime;
 
@@ -44,12 +49,33 @@ public class WaveManager : MonoBehaviour
 
                 if (timerFillImage != null)
                 {
-                    timerFillImage.fillAmount =
-                        timer / timeBetweenWaves;
+                    timerFillImage.fillAmount = timer / timeBetweenWaves;
+                }
+                bool allCleared =
+                    spawnManager.GetRemainingObjects() <= 0;
+
+                bool timeUp = timer <= 0;
+
+                if (allCleared)
+                {
+                    clearedByKill = true;
+                    break;
+                }
+
+                if (timeUp)
+                {
+                    break;
                 }
 
                 yield return null;
             }
+
+            // ‚±‚±‚Å”»’è
+            if (clearedByKill)
+            {
+                ScoreManager.instance.AddSkillPoint(10);
+            }
+
             wave++;
 
             SceneManager.LoadScene("SkillTest");

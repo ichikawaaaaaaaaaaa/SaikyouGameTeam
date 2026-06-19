@@ -2,8 +2,13 @@ using UnityEngine;
 
 public class Grass : MonoBehaviour
 {
-    public int score;
-    public int skillPoint;
+    [Header("Reward")]
+    public int score = 1;
+    public int skillPoint = 1;
+
+    [Header("HP")]
+    public int maxHp = 10;   
+    private int currentHp;
 
     public Sprite clickedSprite;
 
@@ -12,8 +17,21 @@ public class Grass : MonoBehaviour
     void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
+        currentHp = maxHp;
     }
 
+    // ƒ_ƒ[ƒW‚ğó‚¯‚é
+    public void TakeDamage(int damage)
+    {
+        currentHp -= damage;
+
+        if (currentHp <= 0)
+        {
+            Harvest();
+        }
+    }
+
+    // ûŠn
     public void Harvest()
     {
         ScoreManager.instance.AddScore(score);

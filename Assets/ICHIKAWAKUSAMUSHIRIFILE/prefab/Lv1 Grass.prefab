@@ -144,6 +144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Grass
   score: 1
   skillPoint: 1
+  maxHp: 10
   clickedSprite: {fileID: 21300000, guid: 8e4ae4d1339d6fa4fbb3209a59a7dc0c, type: 3}
 --- !u!82 &3212190636165842381
 AudioSource:

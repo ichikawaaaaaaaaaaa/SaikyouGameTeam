@@ -20,4 +20,4 @@ MonoBehaviour:
   icon: {fileID: 0}
   addHarvestSizeX: 1
   addHarvestSizeY: 1
-  cooldownReduction: 0.1
+  cooldownReduction: 0.8

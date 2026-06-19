@@ -456,7 +456,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 74812645}
         m_TargetAssemblyTypeName: SkillParam, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -2101,7 +2101,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 333271670}
         m_TargetAssemblyTypeName: SkillParam, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -4404,7 +4404,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 579329807}
         m_TargetAssemblyTypeName: SkillParam, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -6247,7 +6247,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 850719377}
         m_TargetAssemblyTypeName: SkillParam, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -6852,7 +6852,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 893618251}
         m_TargetAssemblyTypeName: SkillParam, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -9986,7 +9986,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1416431436}
         m_TargetAssemblyTypeName: SkillParam, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -11125,7 +11125,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1562652516}
         m_TargetAssemblyTypeName: SkillParam, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -11590,7 +11590,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1621518057
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12185,7 +12185,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1697460017
 RectTransform:
   m_ObjectHideFlags: 0

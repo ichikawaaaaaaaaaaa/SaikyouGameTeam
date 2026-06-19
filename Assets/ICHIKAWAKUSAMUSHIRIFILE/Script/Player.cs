@@ -9,6 +9,9 @@ public class Player: MonoBehaviour
     [Header("クールタイム")]
     public float cooldown = 1f;
 
+    [Header("攻撃力")]
+    public int attackPower = 1;
+
     private float nextHarvestTime = 0f;
 
 
@@ -69,12 +72,7 @@ public class Player: MonoBehaviour
                 int targetX = center.x + x;
                 int targetY = center.y + y;
 
-                SpawnManager.instance.HarvestArea(
-                    targetX,
-                    targetY,
-                    1,
-                    1
-                );
+                SpawnManager.instance.HarvestArea(  targetX, targetY, 1,  1, attackPower);
             }
         }
     }

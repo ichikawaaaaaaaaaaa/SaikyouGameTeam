@@ -82,7 +82,7 @@ public class SpawnManager : MonoBehaviour
     }
 
     // ûŠn
-    public void HarvestCell(int x, int y)
+    public void HarvestCell(int x, int y, int damage)
     {
         if (!IsInsideGrid(x, y))
             return;
@@ -92,29 +92,27 @@ public class SpawnManager : MonoBehaviour
         if (cell.currentObject == null)
             return;
 
-        Grass grass =
-            cell.currentObject.GetComponent<Grass>();
+        Grass grass = cell.currentObject.GetComponent<Grass>();
 
         if (grass != null)
         {
-            grass.Harvest();
+            grass.TakeDamage(damage);
         }
-
-        cell.currentObject = null;
     }
 
     //@ûŠn‚·‚é”ÍˆÍ
     public void HarvestArea(
-        int startX,
-        int startY,
-        int sizeX,
-        int sizeY)
+      int startX,
+      int startY,
+      int sizeX,
+      int sizeY,
+      int damage)
     {
         for (int x = startX; x < startX + sizeX; x++)
         {
             for (int y = startY; y < startY + sizeY; y++)
             {
-                HarvestCell(x, y);
+                HarvestCell(x, y, damage);
             }
         }
     }

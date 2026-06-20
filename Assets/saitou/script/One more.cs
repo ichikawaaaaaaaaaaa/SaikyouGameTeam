@@ -18,6 +18,6 @@ public class Onemore : MonoBehaviour
 
         yield return new WaitForSeconds(0.3f);
 
-        SceneManager.LoadScene("Game Scene");
+        SceneManager.LoadScene("GameScene");
     }
 }

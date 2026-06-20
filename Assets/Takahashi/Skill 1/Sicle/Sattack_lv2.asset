@@ -10,11 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04f79c099024a9b488cb1d040e758192, type: 3}
-  m_Name: harvestSize3
+  m_Name: Sattack_lv2
   m_EditorClassIdentifier: Assembly-CSharp::SkillData
-  skillName: "\u7BC4\u56F2\u62E1\u5927"
-  description: "\u7BC4\u56F2\uFF12\u30DE\u30B9\u8FFD\u52A0"
+  skillId: attack_lv2
+  skillName: "Lv2\u653B\u6483\u529B\u5897\u52A0"
+  description: "Lv2\u653B\u6483\u529B\u5897\u52A0"
+  icon: {fileID: 0}
   cost: 100
   requiredSkills:
-  - {fileID: 11400000, guid: bad9b3394a1058a4785fee502c28b1d1, type: 2}
-  icon: {fileID: 0}
+  - {fileID: 11400000, guid: 74832c6676c285241a8f99434e7783f9, type: 2}
+  effect:
+    addHarvestSizeX: 0
+    addHarvestSizeY: 0
+    attackPower: 4
+    skillPoint: 0

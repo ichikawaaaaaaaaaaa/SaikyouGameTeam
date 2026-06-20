@@ -10,13 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04f79c099024a9b488cb1d040e758192, type: 3}
-  m_Name: New Skill Data
+  m_Name: Sattack_lv4
   m_EditorClassIdentifier: Assembly-CSharp::SkillData
-  skillName: 
-  description: 
-  cost: 0
-  requiredSkills: []
+  skillId: attack_lv4
+  skillName: "Lv4\u653B\u6483\u529B\u5897\u52A0"
+  description: "Lv4\u653B\u6483\u529B\u5897\u52A0"
   icon: {fileID: 0}
-  addHarvestSizeX: 0
-  addHarvestSizeY: 0
-  cooldownReduction: 0
+  cost: 110
+  requiredSkills:
+  - {fileID: 11400000, guid: 9659638028a70754881d132a357ade73, type: 2}
+  effect:
+    addHarvestSizeX: 0
+    addHarvestSizeY: 0
+    attackPower: 8
+    skillPoint: 0

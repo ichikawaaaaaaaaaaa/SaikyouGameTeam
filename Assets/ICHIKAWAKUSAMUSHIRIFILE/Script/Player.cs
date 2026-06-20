@@ -29,20 +29,23 @@ public class Player: MonoBehaviour
 
     public void ApplySkill(SkillData skill)
     {
-        harvestSizeX += skill.addHarvestSizeX;
-        harvestSizeY += skill.addHarvestSizeY;
-        cooldown -= skill.cooldownReduction;
+        harvestSizeX += skill.effect.addHarvestSizeX;
+        harvestSizeY += skill.effect.addHarvestSizeY;
 
-        if (cooldown < 0.1f)
-            cooldown = 0.1f;
+        attackPower += Mathf.RoundToInt(skill.effect.attackPower);
     }
 
     private void ApplyLearnedSkills()
     {
-        foreach (var skill in SkillSystem.instance.GetLearnedSkills())
+        var skills = SkillSystem.instance.GetLearnedSkills();
+
+        Debug.Log("スキル数: " + skills.Count);
+
+        foreach (var skill in skills)
         {
+            Debug.Log("適用: " + skill.skillName);
             ApplySkill(skill);
-        }//スキル内容を取る
+        }
     }
     void ClickGrid()
     {

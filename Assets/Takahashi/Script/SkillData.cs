@@ -1,19 +1,38 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-[CreateAssetMenu(menuName = "SkillTree/Skill")]
+[System.Serializable]
+public class SkillEffect
+{
+    [Header("収穫")]
+    public int addHarvestSizeX;
+    public int addHarvestSizeY;
+
+    [Header("戦闘")]
+    public float attackPower;
+
+    [Header("ポイント")]
+    public int skillPoint;
+}
+
+[CreateAssetMenu(fileName = "Skill", menuName = "SkillTree/Skill")]
 public class SkillData : ScriptableObject
 {
-    public string skillName;
-    public string description;
-    public int cost;
+    [Header("識別情報")]
+    public string skillId;
 
-    public List<SkillData> requiredSkills;
+    [Header("表示")]
+    public string skillName;
+
+    [TextArea(2, 5)]
+    public string description;
 
     public Sprite icon;
 
+    [Header("取得条件")]
+    public int cost;
+    public List<SkillData> requiredSkills = new();
+
     [Header("効果")]
-    public int addHarvestSizeX;
-    public int addHarvestSizeY;
-    public float cooldownReduction;
+    public SkillEffect effect;
 }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d7346a9cda5671e49a759efcf9f5acfb
+guid: 5dd9d49c2da9b8b4d8dbd82c975d06b7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4586328643396762601
-    second: "\u30EC\u30D9\u30EB3_0"
+      213: -3320855441969285134
+    second: haikei kansei_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u30EC\u30D9\u30EB3_0"
+      name: haikei kansei_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2039
-        height: 2039
+        width: 736
+        height: 414
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7140323f5661a50c0800000000000000
-      internalID: -4586328643396762601
+      spriteID: 2f77ff6f193f9e1d0800000000000000
+      internalID: -3320855441969285134
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\u30EC\u30D9\u30EB3_0": -4586328643396762601
+      haikei kansei_0: -3320855441969285134
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

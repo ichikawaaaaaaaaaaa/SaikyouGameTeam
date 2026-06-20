@@ -18,6 +18,13 @@ public class SpawnManager : MonoBehaviour
 
     public Cell[,] grid;
 
+    [Header("Grid Position")]
+    public Vector2 gridOffset;
+
+    [Header("Spacing")]
+    public float spacingX = 0f;
+    public float spacingY = 0f;
+
     void Awake()
     {
         instance = this;
@@ -152,17 +159,23 @@ public class SpawnManager : MonoBehaviour
     // ç¿ïWïœä∑
     public Vector2Int WorldToGrid(Vector3 worldPos)
     {
-        int x = Mathf.FloorToInt(worldPos.x / cellSize);
-        int y = Mathf.FloorToInt(worldPos.y / cellSize);
+        float stepX = cellSize + spacingX;
+        float stepY = cellSize + spacingY;
+
+        int x = Mathf.FloorToInt((worldPos.x - gridOffset.x) / stepX);
+        int y = Mathf.FloorToInt((worldPos.y - gridOffset.y) / stepY);
 
         return new Vector2Int(x, y);
     }
 
     public Vector3 GridToWorld(int x, int y)
     {
+        float stepX = cellSize + spacingX;
+        float stepY = cellSize + spacingY;
+
         return new Vector3(
-            x * cellSize + cellSize * 0.5f,
-            y * cellSize + cellSize * 0.5f,
+            gridOffset.x + x * stepX + cellSize * 0.5f,
+            gridOffset.y + y * stepY + cellSize * 0.5f,
             0
         );
     }

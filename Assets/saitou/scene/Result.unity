@@ -156,7 +156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 601, y: -320.65}
+  m_AnchoredPosition: {x: 588.17, y: -326.74}
   m_SizeDelta: {x: 574.6595, y: 183.16}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &95732332
@@ -681,8 +681,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00045395, y: 0.00041199}
-  m_SizeDelta: {x: 995.76, y: 578.26}
+  m_AnchoredPosition: {x: 0.010986, y: -0.00032043}
+  m_SizeDelta: {x: 1031.1, y: 578.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &592356960
 MonoBehaviour:
@@ -801,7 +801,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -561.71, y: -312}
+  m_AnchoredPosition: {x: -561.71, y: -329.3}
   m_SizeDelta: {x: 567.57, y: 143.4469}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &907880055
@@ -1046,7 +1046,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8.0044, y: -320.65}
+  m_AnchoredPosition: {x: 8.0043, y: -337.95}
   m_SizeDelta: {x: 571.8586, y: 160.7437}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1063618592
@@ -1404,7 +1404,8 @@ GameObject:
   - component: {fileID: 1853687089}
   - component: {fileID: 1853687091}
   - component: {fileID: 1853687090}
-  - component: {fileID: 1853687092}
+  - component: {fileID: 1853687093}
+  - component: {fileID: 1853687094}
   m_Layer: 5
   m_Name: SkillText
   m_TagString: Untagged
@@ -1451,7 +1452,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 000
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1531,7 +1532,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1853687088}
   m_CullTransparentMesh: 1
---- !u!114 &1853687092
+--- !u!114 &1853687093
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1542,7 +1543,20 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 428c4e3f8f638184db8296d4618d1f21, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Skillpoint
+  m_EditorClassIdentifier: Assembly-CSharp::SkillText
+--- !u!114 &1853687094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853687088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5201ad04612ec924995f7d0ac4bdd371, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillText
+  skillText: {fileID: 1853687090}
 --- !u!1 &1917592441
 GameObject:
   m_ObjectHideFlags: 0
@@ -1799,7 +1813,7 @@ GameObject:
   - component: {fileID: 2104408052}
   - component: {fileID: 2104408054}
   - component: {fileID: 2104408053}
-  - component: {fileID: 2104408055}
+  - component: {fileID: 2104408056}
   m_Layer: 5
   m_Name: WaveText
   m_TagString: Untagged
@@ -1926,7 +1940,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2104408051}
   m_CullTransparentMesh: 1
---- !u!114 &2104408055
+--- !u!114 &2104408056
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1935,9 +1949,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2104408051}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2c6cdafea0db6a48863dab0e57e58b7, type: 3}
+  m_Script: {fileID: 11500000, guid: 69d44e8486c59b74089e7c2df993e1ff, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Wave
+  m_EditorClassIdentifier: Assembly-CSharp::WaveText
+  waveText: {fileID: 2104408053}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

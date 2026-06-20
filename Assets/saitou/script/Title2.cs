@@ -18,6 +18,6 @@ public class Title2 : MonoBehaviour
 
         yield return new WaitForSeconds(0.3f);
 
-        SceneManager.LoadScene("Title Scene");
+        SceneManager.LoadScene("TitleScene");
     }
 }

@@ -18,6 +18,6 @@ public class YES : MonoBehaviour
 
         yield return new WaitForSeconds(1.0f);
 
-        SceneManager.LoadScene("Game Scene");
+        SceneManager.LoadScene("KUSAMUSHIRI");
     }
 }

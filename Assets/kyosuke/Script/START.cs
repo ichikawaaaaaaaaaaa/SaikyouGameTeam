@@ -18,6 +18,6 @@ public class START : MonoBehaviour
 
         yield return new WaitForSeconds(1.0f);
 
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("WeaponScene");
     }
 }

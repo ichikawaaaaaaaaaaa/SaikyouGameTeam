@@ -10,14 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04f79c099024a9b488cb1d040e758192, type: 3}
-  m_Name: Cooldown2
+  m_Name: SkillPoint
   m_EditorClassIdentifier: Assembly-CSharp::SkillData
-  skillName: "\u9593\u9694\u77ED\u7E2E"
-  description: "\u30AF\u30FC\u30EB\u30BF\u30A4\u30E0\u77ED\u7E2E"
-  cost: 15
-  requiredSkills:
-  - {fileID: 11400000, guid: 74832c6676c285241a8f99434e7783f9, type: 2}
+  skillId: SkillPoint
+  skillName: "Lv1\u30B9\u30AD\u30EB\u30DD\u30A4\u30F3\u30C8\u7372\u5F97\u91CF\u5897\u52A0"
+  description: "Lv1\u30B9\u30AD\u30EB\u30DD\u30A4\u30F3\u30C8\u7372\u5F97\u91CF\u5897\u52A0"
   icon: {fileID: 0}
-  addHarvestSizeX: 1
-  addHarvestSizeY: 1
-  cooldownReduction: 0.8
+  cost: 150
+  requiredSkills:
+  - {fileID: 11400000, guid: 4fdc69239bfcc7f488854cdafffb10c3, type: 2}
+  effect:
+    addHarvestSizeX: 0
+    addHarvestSizeY: 0
+    attackPower: 0
+    skillPoint: 0

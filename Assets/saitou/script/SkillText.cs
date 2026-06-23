@@ -7,6 +7,7 @@ public class SkillText : MonoBehaviour
 
     void Start()
     {
-        skillText.text = "10";
+        skillText.text =
+            ScoreManager.instance.GetTotalSkillPoint().ToString();
     }
 }

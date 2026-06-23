@@ -7,6 +7,11 @@ public class SkillTree : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip clickSE;
 
+    Vector3 originalScale; 
+    void Start()
+    {
+        originalScale = transform.localScale; 
+    }
     public void OnTileButtonClick()
     {
         StartCoroutine(ChangeScene());
@@ -14,7 +19,11 @@ public class SkillTree : MonoBehaviour
 
     IEnumerator ChangeScene()
     {
+        transform.localScale = originalScale * 0.9f;
         audioSource.PlayOneShot(clickSE);
+        yield return new WaitForSeconds(0.1f);
+
+        transform.localScale = originalScale;
 
         yield return new WaitForSeconds(0.3f);
 

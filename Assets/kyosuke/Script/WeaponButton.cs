@@ -23,7 +23,7 @@ public class WeaponButton : MonoBehaviour
 
         yield return new WaitForSeconds(0.1f);
 
-        weaponSelectUI.SetActive(false);
+        //weaponSelectUI.SetActive(false);
 
         if (unlocked)
         {

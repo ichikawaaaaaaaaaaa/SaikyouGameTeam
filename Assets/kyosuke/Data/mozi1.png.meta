@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 3e784ce416ff4a94d8429b6ced5f15e5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1021408326774662200
+    second: mozi1_0
+  - first:
+      213: 5845393262692520524
+    second: mozi1_1
+  - first:
+      213: 3529837276161891324
+    second: mozi1_2
+  - first:
+      213: 8306633258646960411
+    second: mozi1_3
+  - first:
+      213: 4963071442693984090
+    second: mozi1_4
+  - first:
+      213: 3007622485701696094
+    second: mozi1_5
+  - first:
+      213: 4498269033660500998
+    second: mozi1_6
+  - first:
+      213: -68581181878836606
+    second: mozi1_7
+  - first:
+      213: 609399898857754898
+    second: mozi1_8
+  - first:
+      213: -4281913420059795772
+    second: mozi1_9
+  - first:
+      213: 6090801305103444537
+    second: mozi1_10
+  - first:
+      213: -1022346593085535600
+    second: mozi1_11
+  - first:
+      213: -3057005579129534297
+    second: mozi1_12
+  - first:
+      213: 402572912896609056
+    second: mozi1_13
+  - first:
+      213: -2378468786146275057
+    second: mozi1_14
+  - first:
+      213: -1234663062351209509
+    second: mozi1_15
+  - first:
+      213: -5047508024910376823
+    second: mozi1_16
+  - first:
+      213: 3084999947793490668
+    second: mozi1_17
+  - first:
+      213: 7040015276427830266
+    second: mozi1_18
+  - first:
+      213: -6093100943023341453
+    second: mozi1_19
+  - first:
+      213: -1344871271738864363
+    second: mozi1_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mozi1_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 147
+        width: 28
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cb58f7d98a33d1f0800000000000000
+      internalID: -1021408326774662200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozi1_1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 116
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c42df33c3320f1150800000000000000
+      internalID: 5845393262692520524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozi1_2
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 114
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfbdf800d408cf030800000000000000
+      internalID: 3529837276161891324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozi1_3
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 114
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b19f81530f6174370800000000000000
+      internalID: 8306633258646960411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozi1_4
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 116
+        width: 11
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5f09a08e2f50e440800000000000000
+      internalID: 4963071442693984090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozi1_5
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 116
+        width: 30
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5a1ab637b83db920800000000000000
+      internalID: 3007622485701696094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozi1_6
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 116
+        width: 34
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60c497f6adf0d6e30800000000000000
+      internalID: 4498269033660500998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozi1_7
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 114
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 282e5d747c95c0ff0800000000000000
+      internalID: -68581181878836606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozi1_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 56
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2115391baf5057800800000000000000
+      internalID: 609399898857754898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozi1_9
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 56
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ce9b565e669394c0800000000000000
+      internalID: -4281913420059795772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozi1_10
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 71
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93a2d2c348fd68450800000000000000
+      internalID: 6090801305103444537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozi1_11
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 57
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09a4ec1b035efc1f0800000000000000
+      internalID: -1022346593085535600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozi1_12
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 58
+        width: 47
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a8c89b5f955395d0800000000000000
+      internalID: -3057005579129534297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozi1_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 58
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02b856d6ee9369500800000000000000
+      internalID: 402572912896609056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozi1_14
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f01956c9d3bfdfed0800000000000000
+      internalID: -2378468786146275057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozi1_15
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 8
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdb924f7c789ddee0800000000000000
+      internalID: -1234663062351209509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozi1_16
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 35
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9809846b136a3f9b0800000000000000
+      internalID: -5047508024910376823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozi1_17
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1
+        width: 45
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce264548b1f10da20800000000000000
+      internalID: 3084999947793490668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozi1_18
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 0
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af3edc4289823b160800000000000000
+      internalID: 7040015276427830266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozi1_19
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 13
+        width: 8
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3700f7699f4f07ba0800000000000000
+      internalID: -6093100943023341453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozi1_20
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51d806b24be065de0800000000000000
+      internalID: -1344871271738864363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      mozi1_0: -1021408326774662200
+      mozi1_1: 5845393262692520524
+      mozi1_10: 6090801305103444537
+      mozi1_11: -1022346593085535600
+      mozi1_12: -3057005579129534297
+      mozi1_13: 402572912896609056
+      mozi1_14: -2378468786146275057
+      mozi1_15: -1234663062351209509
+      mozi1_16: -5047508024910376823
+      mozi1_17: 3084999947793490668
+      mozi1_18: 7040015276427830266
+      mozi1_19: -6093100943023341453
+      mozi1_2: 3529837276161891324
+      mozi1_20: -1344871271738864363
+      mozi1_3: 8306633258646960411
+      mozi1_4: 4963071442693984090
+      mozi1_5: 3007622485701696094
+      mozi1_6: 4498269033660500998
+      mozi1_7: -68581181878836606
+      mozi1_8: 609399898857754898
+      mozi1_9: -4281913420059795772
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

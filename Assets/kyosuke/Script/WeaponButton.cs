@@ -26,22 +26,22 @@ public class WeaponButton : MonoBehaviour
     {
         if (playerStats.weponUnlock01)
             unlocked01 = true;
-        if (playerStats.weponUnlock02)
-            unlocked01 = true;
-        if (playerStats.weponUnlock03)
-            unlocked01 = true;
-        if (playerStats.weponUnlock04)
-            unlocked01 = true;
-        if (playerStats.weponUnlock05)
-            unlocked01 = true;
-        if (playerStats.weponUnlock06)
-            unlocked01 = true;
-        if (playerStats.weponUnlock07)
-            unlocked01 = true;
-        if (playerStats.weponUnlock08)
-            unlocked01 = true;
-        if (playerStats.weponUnlock09)
-            unlocked01 = true;
+        //if (playerStats.weponUnlock02)
+        //    unlocked01 = true;
+        //if (playerStats.weponUnlock03)
+        //    unlocked01 = true;
+        //if (playerStats.weponUnlock04)
+        //    unlocked01 = true;
+        //if (playerStats.weponUnlock05)
+        //    unlocked01 = true;
+        //if (playerStats.weponUnlock06)
+        //    unlocked01 = true;
+        //if (playerStats.weponUnlock07)
+        //    unlocked01 = true;
+        //if (playerStats.weponUnlock08)
+        //    unlocked01 = true;
+        //if (playerStats.weponUnlock09)
+        //    unlocked01 = true;
     }
 
     public void OnMouseDown()

@@ -25,6 +25,8 @@ public class SpawnManager : MonoBehaviour
     public float spacingX = 0f;
     public float spacingY = 0f;
 
+
+
     void Awake()
     {
         instance = this;

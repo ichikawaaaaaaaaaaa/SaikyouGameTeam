@@ -25,13 +25,20 @@ IPointerExitHandler
     [SerializeField]
     private Text descriptionText;
 
+    [SerializeField] private Sprite lockedSprite;
+    [SerializeField] private Sprite availableSprite;
+    [SerializeField] private Sprite learnedSprite;
+
+    private Image buttonImage;
     private Button button;
+    
 
     void Awake()
     {
         button = GetComponent<Button>();
-
        
+        buttonImage = GetComponent<Image>();
+
     }
 
     void Start()
@@ -68,9 +75,8 @@ IPointerExitHandler
 
                 button.interactable = false;
 
-                ChangeButtonColor(
-                   Color.gray
-                        );
+                if (buttonImage != null)
+                    buttonImage.sprite = lockedSprite;
 
                 break;
 
@@ -78,8 +84,8 @@ IPointerExitHandler
 
                 button.interactable = true;
 
-                ChangeButtonColor(
-                    Color.white);
+                if (buttonImage != null)
+                    buttonImage.sprite = availableSprite;
 
                 break;
 
@@ -87,8 +93,9 @@ IPointerExitHandler
 
                 button.interactable = false;
 
-                ChangeButtonColor(
-                    Color.green);
+                if (buttonImage != null)
+                    buttonImage.sprite = learnedSprite;
+
 
                 break;
         }
@@ -168,22 +175,22 @@ IPointerExitHandler
             text.text = "";
     }
 
-    public void ChangeButtonColor(
-        Color color)
-    {
-        Image img =
-            button.GetComponent<Image>();
+    //public void ChangeButtonColor(
+    //    Color color)
+    //{
+    //    Image img =
+    //        button.GetComponent<Image>();
 
-        if (img != null)
-            img.color = color;
+    //    if (img != null)
+    //        img.color = color;
 
-        ColorBlock cb =
-            button.colors;
+    //    ColorBlock cb =
+    //        button.colors;
 
-        cb.normalColor = color;
-        cb.selectedColor = color;
-        cb.pressedColor = color;
+    //    cb.normalColor = color;
+    //    cb.selectedColor = color;
+    //    cb.pressedColor = color;
 
-        button.colors = cb;
-    }
+    //    button.colors = cb;
+    //}
 }

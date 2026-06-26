@@ -924,7 +924,7 @@ MonoBehaviour:
   weaponSelectUI: {fileID: 1143087854}
   confirmWindow: {fileID: 1063921130}
   lockWindow: {fileID: 612210663}
-  unlocked: 0
+  unlocked: 1
   audioSource: {fileID: 223016023}
   clickSE: {fileID: 8300000, guid: a59e6916185652f4a8a92b3deefccbef, type: 3}
 --- !u!61 &223016018

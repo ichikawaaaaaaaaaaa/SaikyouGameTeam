@@ -16,7 +16,7 @@ public class Grass : MonoBehaviour
 
     void Awake()
     {
-        sr = GetComponent<SpriteRenderer>();
+        //sr = GetComponent<SpriteRenderer>();
         currentHp = maxHp;
     }
 
@@ -40,8 +40,10 @@ public class Grass : MonoBehaviour
         KusamushiriCounter.instance.AddGrass(score);
         KusamushiriCounter.instance.AddSkillPoint(skillPoint);
 
-        if (clickedSprite != null)
-            sr.sprite = clickedSprite;
+        //if (clickedSprite != null)
+        //    sr.sprite = clickedSprite;
+
+        CursorManager.Instance.PlayHitCursor(0.15f);
 
         Destroy(gameObject, 0.1f);
     }

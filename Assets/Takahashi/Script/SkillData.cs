@@ -35,4 +35,6 @@ public class SkillData : ScriptableObject
 
     [Header("Œø‰Ê")]
     public SkillEffect effect;
+
+    public Wepontipe wepontipe;
 }

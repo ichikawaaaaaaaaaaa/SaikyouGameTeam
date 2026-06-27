@@ -23,4 +23,5 @@ MonoBehaviour:
     addHarvestSizeX: 0
     addHarvestSizeY: 0
     attackPower: 0
-    skillPoint: 0
+    skillPoint: 1
+  wepontipe: 0

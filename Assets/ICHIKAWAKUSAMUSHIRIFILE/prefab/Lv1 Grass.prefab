@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1972688076062266436}
   - component: {fileID: -6639903116872148672}
   - component: {fileID: 3212190636165842381}
+  - component: {fileID: 7375986544798093783}
   m_Layer: 0
   m_Name: Lv1 Grass
   m_TagString: Grass
@@ -145,7 +146,12 @@ MonoBehaviour:
   score: 1
   skillPoint: 1
   maxHp: 10
-  clickedSprite: {fileID: 21300000, guid: 8e4ae4d1339d6fa4fbb3209a59a7dc0c, type: 3}
+  grassSprites:
+  - {fileID: 21300000, guid: 843cabcb0bd397944a833a015498f97d, type: 3}
+  - {fileID: 21300000, guid: ef37770b705014643857ef76a3305ddb, type: 3}
+  - {fileID: 21300000, guid: 0341f397897d94342aebd20f8e490580, type: 3}
+  - {fileID: 21300000, guid: 91ad12f908e77dd40a21f8976d10e2d0, type: 3}
+  changeTime: 0.1
 --- !u!82 &3212190636165842381
 AudioSource:
   m_ObjectHideFlags: 0
@@ -243,3 +249,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &7375986544798093783
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9056095707158096607}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6330dd334cb2cc74ba127536b614206c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

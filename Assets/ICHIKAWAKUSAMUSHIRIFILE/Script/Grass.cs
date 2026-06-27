@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class Grass : MonoBehaviour
 {
@@ -7,20 +8,37 @@ public class Grass : MonoBehaviour
     public int skillPoint = 1;
 
     [Header("HP")]
-    public int maxHp = 10;   
+    public int maxHp = 10;
     private int currentHp;
 
-    public Sprite clickedSprite;
+    [Header("Growth Animation")]
+    public Sprite[] grassSprites;   // 成長画像
+    public float changeTime = 2f;    // 変更間隔
 
     private SpriteRenderer sr;
 
+
     void Awake()
     {
-        //sr = GetComponent<SpriteRenderer>();
         currentHp = maxHp;
+
+        sr = GetComponent<SpriteRenderer>();
+
+        StartCoroutine(GrowGrass());
     }
 
-    // ダメージを受ける
+
+    IEnumerator GrowGrass()
+    {
+        for (int i = 0; i < grassSprites.Length; i++)
+        {
+            sr.sprite = grassSprites[i];
+
+            yield return new WaitForSeconds(changeTime);
+        }
+    }
+
+
     public void TakeDamage(int damage)
     {
         currentHp -= damage;
@@ -31,7 +49,7 @@ public class Grass : MonoBehaviour
         }
     }
 
-    // 収穫
+
     public void Harvest()
     {
         ScoreManager.instance.AddScore(score);
@@ -39,9 +57,6 @@ public class Grass : MonoBehaviour
 
         KusamushiriCounter.instance.AddGrass(score);
         KusamushiriCounter.instance.AddSkillPoint(skillPoint);
-
-        //if (clickedSprite != null)
-        //    sr.sprite = clickedSprite;
 
         CursorManager.Instance.PlayHitCursor(0.15f);
 

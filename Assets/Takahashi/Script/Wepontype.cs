@@ -1,6 +1,4 @@
-using UnityEngine;
-
-public enum Wepontipe 
+public enum WeponType
 {
     Wepon01,
     Wepon02,
@@ -10,4 +8,5 @@ public enum Wepontipe
     Wepon06,
     Wepon07,
     Wepon08,
+    Wepon09
 }

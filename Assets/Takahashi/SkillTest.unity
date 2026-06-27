@@ -481,6 +481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 9b2b8baec2f642640b78d568c4d7fe6a, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -1029,6 +1030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 9d5df9997774dc847bc23c9bacb511a1, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -1261,6 +1263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 1433c322e01b6c043b6d8c0433ccf578, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -1493,6 +1496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 0ab58feba8186d042982d77b0b4f1ef2, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -2924,6 +2928,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 9d5df9997774dc847bc23c9bacb511a1, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -3235,6 +3240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: ee68747435a76b84890797775778fa82, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -4632,6 +4638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: ee68747435a76b84890797775778fa82, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -4939,6 +4946,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 9659638028a70754881d132a357ade73, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -5171,6 +5179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 8529da15add2d7345b78c92ffa9002c7, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -5616,7 +5625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 629f16366fde022489811efc14765345, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
-  stats: {fileID: 0}
+  stats: {fileID: 11400000, guid: c783ae219d6e45e47bb28c976c200f72, type: 2}
 --- !u!4 &293094406
 Transform:
   m_ObjectHideFlags: 0
@@ -5764,6 +5773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 9d5df9997774dc847bc23c9bacb511a1, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -6454,6 +6464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 6534acd01dea7bd42af7cbdd180ebd12, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -7073,6 +7084,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 822687abd157d1642864b43f3102084b, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -7384,6 +7396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: ee68747435a76b84890797775778fa82, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -7924,6 +7937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 3def4ecf96f1978418afc540c24fd24f, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -8389,6 +8403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 9659638028a70754881d132a357ade73, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -9087,6 +9102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: effa2bb9776372e499363ef5dd42f8d4, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -9319,6 +9335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: ee68747435a76b84890797775778fa82, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -9551,6 +9568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: eb6cb460266891a44b9780ca65151869, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -10006,7 +10024,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8431847868532987884, guid: f2dd8af38bd1f5c4ca625effc596f8b5, type: 3}
+  m_Sprite: {fileID: -3789654806355285168, guid: 0fce3fcddb3c6b94183eb5b3d49ee208, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10036,12 +10054,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 11400000, guid: c783ae219d6e45e47bb28c976c200f72, type: 2}
   skill: {fileID: 11400000, guid: f3050f5e45752bc4aacb0ccc7139d547, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
-  lockedSprite: {fileID: 8431847868532987884, guid: f2dd8af38bd1f5c4ca625effc596f8b5, type: 3}
-  availableSprite: {fileID: 8431847868532987884, guid: f2dd8af38bd1f5c4ca625effc596f8b5, type: 3}
-  learnedSprite: {fileID: -6533320149679747327, guid: c55f6d33d6534a64db8f01dc94e15487, type: 3}
+  lockedSprite: {fileID: -3789654806355285168, guid: 0fce3fcddb3c6b94183eb5b3d49ee208, type: 3}
+  availableSprite: {fileID: -3789654806355285168, guid: 0fce3fcddb3c6b94183eb5b3d49ee208, type: 3}
+  learnedSprite: {fileID: 7881753553402542587, guid: e1dcff6e661f3f943ad73769a919d22d, type: 3}
 --- !u!1 &497387758
 GameObject:
   m_ObjectHideFlags: 0
@@ -10253,6 +10272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: bad9b3394a1058a4785fee502c28b1d1, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -10485,6 +10505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: c44036b615c7d174783a4c6cbed94148, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -10717,6 +10738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: eb6cb460266891a44b9780ca65151869, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -10949,6 +10971,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 4fdc69239bfcc7f488854cdafffb10c3, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -11181,6 +11204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 11400000, guid: c783ae219d6e45e47bb28c976c200f72, type: 2}
   skill: {fileID: 11400000, guid: 822687abd157d1642864b43f3102084b, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -11500,6 +11524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 035369b61010d1c43b66d9d7236e568f, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -12119,6 +12144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 7ed1b2792edfc2348b920588a8a7dab5, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -12595,6 +12621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 2fe03e8d06f197a449932d457dcf02d8, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -12902,6 +12929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: c44036b615c7d174783a4c6cbed94148, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -13223,6 +13251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 9b2b8baec2f642640b78d568c4d7fe6a, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -13688,6 +13717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 9d5df9997774dc847bc23c9bacb511a1, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -14611,6 +14641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: bbfa2eeda921b5247b4ecc1d511dc21b, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -14997,6 +15028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 8529da15add2d7345b78c92ffa9002c7, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -16205,6 +16237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: ad306edd00a98894aa53133a5a36c78c, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -16516,6 +16549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: ee68747435a76b84890797775778fa82, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -16749,6 +16783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 9b2b8baec2f642640b78d568c4d7fe6a, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -17297,6 +17332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: bad9b3394a1058a4785fee502c28b1d1, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -17766,6 +17802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 6534acd01dea7bd42af7cbdd180ebd12, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -17998,6 +18035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: b1e535974d8a6a146a90b321e4744672, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -18538,6 +18576,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: eb6cb460266891a44b9780ca65151869, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -18805,7 +18844,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &872899838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19239,6 +19278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: b1e535974d8a6a146a90b321e4744672, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -19471,6 +19511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 4fdc69239bfcc7f488854cdafffb10c3, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -19996,6 +20037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: ad306edd00a98894aa53133a5a36c78c, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -20303,6 +20345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: bbfa2eeda921b5247b4ecc1d511dc21b, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -20974,6 +21017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: ee68747435a76b84890797775778fa82, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -21285,6 +21329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: b1e535974d8a6a146a90b321e4744672, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -21596,6 +21641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: ad306edd00a98894aa53133a5a36c78c, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -21904,12 +21950,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 11400000, guid: c783ae219d6e45e47bb28c976c200f72, type: 2}
   skill: {fileID: 11400000, guid: 9b2b8baec2f642640b78d568c4d7fe6a, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
-  lockedSprite: {fileID: 0}
-  availableSprite: {fileID: 0}
-  learnedSprite: {fileID: 0}
+  lockedSprite: {fileID: -3789654806355285168, guid: 0fce3fcddb3c6b94183eb5b3d49ee208, type: 3}
+  availableSprite: {fileID: -3789654806355285168, guid: 0fce3fcddb3c6b94183eb5b3d49ee208, type: 3}
+  learnedSprite: {fileID: 7881753553402542587, guid: e1dcff6e661f3f943ad73769a919d22d, type: 3}
 --- !u!114 &978360551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21986,7 +22033,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8431847868532987884, guid: f2dd8af38bd1f5c4ca625effc596f8b5, type: 3}
+  m_Sprite: {fileID: -3789654806355285168, guid: 0fce3fcddb3c6b94183eb5b3d49ee208, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -22136,6 +22183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 4fdc69239bfcc7f488854cdafffb10c3, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -24346,6 +24394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 1433c322e01b6c043b6d8c0433ccf578, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -24736,6 +24785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 2fe03e8d06f197a449932d457dcf02d8, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -25043,6 +25093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: ee68747435a76b84890797775778fa82, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -26428,6 +26479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 2fe03e8d06f197a449932d457dcf02d8, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -26660,6 +26712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: effa2bb9776372e499363ef5dd42f8d4, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -28027,6 +28080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 0ab58feba8186d042982d77b0b4f1ef2, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -28260,6 +28314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: f3050f5e45752bc4aacb0ccc7139d547, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -28646,6 +28701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 035369b61010d1c43b66d9d7236e568f, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -29348,6 +29404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 7ed1b2792edfc2348b920588a8a7dab5, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -29754,6 +29811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 74832c6676c285241a8f99434e7783f9, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -30438,6 +30496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 74585a63776392d48be057cf23787d4a, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -30823,6 +30882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 3def4ecf96f1978418afc540c24fd24f, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -31213,6 +31273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 9d5df9997774dc847bc23c9bacb511a1, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -31445,6 +31506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: ee68747435a76b84890797775778fa82, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -31835,6 +31897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: f302415ee200d594387612bc2c1b01d7, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -32221,6 +32284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 4fdc69239bfcc7f488854cdafffb10c3, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -32457,7 +32521,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1465884601
 RectTransform:
   m_ObjectHideFlags: 0
@@ -32659,6 +32723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 0ab58feba8186d042982d77b0b4f1ef2, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -33120,6 +33185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 822687abd157d1642864b43f3102084b, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -34438,6 +34504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 4fdc69239bfcc7f488854cdafffb10c3, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -34670,6 +34737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: bad9b3394a1058a4785fee502c28b1d1, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -35139,6 +35207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: b1e535974d8a6a146a90b321e4744672, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -36003,6 +36072,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: effa2bb9776372e499363ef5dd42f8d4, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -36393,6 +36463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 4fdc69239bfcc7f488854cdafffb10c3, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -37083,6 +37154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: f302415ee200d594387612bc2c1b01d7, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -37835,6 +37907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: bad9b3394a1058a4785fee502c28b1d1, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -38067,6 +38140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: bad9b3394a1058a4785fee502c28b1d1, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -38848,6 +38922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: ad306edd00a98894aa53133a5a36c78c, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -39546,6 +39621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: c44036b615c7d174783a4c6cbed94148, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -39778,6 +39854,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 9d5df9997774dc847bc23c9bacb511a1, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -40010,6 +40087,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 9d5df9997774dc847bc23c9bacb511a1, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -40321,6 +40399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 6534acd01dea7bd42af7cbdd180ebd12, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -40632,6 +40711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 74585a63776392d48be057cf23787d4a, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -41180,6 +41260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 0ab58feba8186d042982d77b0b4f1ef2, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -41566,6 +41647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 8529da15add2d7345b78c92ffa9002c7, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -41877,6 +41959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: f302415ee200d594387612bc2c1b01d7, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -42702,6 +42785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 3def4ecf96f1978418afc540c24fd24f, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -43404,6 +43488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 4fdc69239bfcc7f488854cdafffb10c3, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -43558,6 +43643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 74832c6676c285241a8f99434e7783f9, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -43869,6 +43955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: eb6cb460266891a44b9780ca65151869, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -44176,6 +44263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 6534acd01dea7bd42af7cbdd180ebd12, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -44685,6 +44773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 9d5df9997774dc847bc23c9bacb511a1, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -44917,6 +45006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 2fe03e8d06f197a449932d457dcf02d8, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}
@@ -46245,6 +46335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a1162b1df49144960fe112b3fa6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillParam
+  stats: {fileID: 0}
   skill: {fileID: 11400000, guid: 4fdc69239bfcc7f488854cdafffb10c3, type: 2}
   text: {fileID: 1116225134}
   descriptionText: {fileID: 1116225134}

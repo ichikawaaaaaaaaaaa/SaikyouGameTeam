@@ -16,6 +16,9 @@ IPointerExitHandler
     private SkillSystem skillSystem;
 
     [SerializeField]
+    private PlayerStats stats;
+
+    [SerializeField]
     private SkillData skill;
 
     [Header("UI")]

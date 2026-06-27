@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04f79c099024a9b488cb1d040e758192, type: 3}
-  m_Name: attack_lv1
+  m_Name: vharvestSize3
   m_EditorClassIdentifier: Assembly-CSharp::SkillData
-  skillId: attack_lv1
-  skillName: "Lv1\u653B\u6483\u529B\u5897\u52A0"
-  description: "Lv1\u653B\u6483\u529B\u5897\u52A0"
+  skillId: HarvestSize3
+  skillName: "\u7BC4\u56F2\u62E1\u5927"
+  description: "\u7BC4\u56F2\uFF12\u30DE\u30B9\u8FFD\u52A0"
   icon: {fileID: 0}
-  cost: 10
-  requiredSkills: []
+  cost: 100
+  requiredSkills:
+  - {fileID: 11400000, guid: bad9b3394a1058a4785fee502c28b1d1, type: 2}
   effect:
-    addHarvestSizeX: 0
-    addHarvestSizeY: 0
-    attackPower: 1
+    addHarvestSizeX: 1
+    addHarvestSizeY: 1
+    attackPower: 0
     skillPoint: 0
-  wepontipe: 0

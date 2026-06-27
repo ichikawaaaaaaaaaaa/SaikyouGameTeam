@@ -10,17 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04f79c099024a9b488cb1d040e758192, type: 3}
-  m_Name: attack_lv1
+  m_Name: wattack_lv2
   m_EditorClassIdentifier: Assembly-CSharp::SkillData
-  skillId: attack_lv1
-  skillName: "Lv1\u653B\u6483\u529B\u5897\u52A0"
-  description: "Lv1\u653B\u6483\u529B\u5897\u52A0"
+  skillName: "\u9593\u9694\u77ED\u7E2E"
+  description: "\u30AF\u30FC\u30EB\u30BF\u30A4\u30E0\u77ED\u7E2E"
+  cost: 70
+  requiredSkills:
+  - {fileID: 11400000, guid: 3def4ecf96f1978418afc540c24fd24f, type: 2}
   icon: {fileID: 0}
-  cost: 10
-  requiredSkills: []
-  effect:
-    addHarvestSizeX: 0
-    addHarvestSizeY: 0
-    attackPower: 1
-    skillPoint: 0
-  wepontipe: 0

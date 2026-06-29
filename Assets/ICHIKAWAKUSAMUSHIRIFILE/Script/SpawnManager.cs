@@ -5,8 +5,8 @@ public class SpawnManager : MonoBehaviour
     public static SpawnManager instance;
 
     [Header("Grid")]
-    public int width = 12;
-    public int height = 6;
+    public int width = 10;
+    public int height = 10;
 
     public float cellSize = 1f;
 

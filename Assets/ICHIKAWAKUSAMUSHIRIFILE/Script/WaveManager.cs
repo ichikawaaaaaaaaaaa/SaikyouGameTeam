@@ -71,11 +71,15 @@ public class WaveManager : MonoBehaviour
         // Œ‹‰Ê•\Ž¦
         if (clearedByKill)
         {
+            Player.canHarvest = false;
+
             yield return StartCoroutine(ShowWaveState("CLEAR!"));
             ScoreManager.instance.AddSkillPoint(10);
         }
         else
         {
+            Player.canHarvest = false;
+
             yield return StartCoroutine(ShowWaveState("TIME UP"));
         }
 

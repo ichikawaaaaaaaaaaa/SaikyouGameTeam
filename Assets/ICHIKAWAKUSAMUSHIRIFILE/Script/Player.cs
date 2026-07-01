@@ -27,6 +27,8 @@ public class Player: MonoBehaviour
 
     void Start()
     {
+        canHarvest = true;
+
         ApplyLearnedSkills();//Žæ‚Á‚½ƒXƒLƒ‹
     }
     void Update()

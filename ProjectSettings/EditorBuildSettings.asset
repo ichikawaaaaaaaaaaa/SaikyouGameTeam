@@ -5,13 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/kyosuke/Scene/TitleScene.unity
     guid: 9727d81cf79446342a26f9625a09b5bc
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 0
+  - enabled: 1
     path: Assets/kyosuke/Scene/GameScene.unity
     guid: 76d57fbf6e370544185fd481b281be25
   - enabled: 1
@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Takahashi/SkillTest.unity
     guid: 6e3bb15360780b543ac30e77ffcf8ebd
-  - enabled: 0
+  - enabled: 1
     path: Assets/kyosuke/Scene/WeaponScene.unity
     guid: 5b756d9ab10ce804f9eafa0ed0d053a5
   m_configObjects: {}

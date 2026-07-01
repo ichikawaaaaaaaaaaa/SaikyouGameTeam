@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using TMPro;
 // ÉXÉLÉãÇÃèÛë‘
 public enum SkillState
 {
@@ -23,10 +24,10 @@ IPointerExitHandler
 
     [Header("UI")]
     [SerializeField]
-    public Text text;
+    public TMP_Text text;
 
     [SerializeField]
-    private Text descriptionText;
+    private TMP_Text descriptionText;
 
     [SerializeField] private Sprite lockedSprite;
     [SerializeField] private Sprite availableSprite;
@@ -52,6 +53,9 @@ IPointerExitHandler
         SetText();
 
         Refresh();
+
+        if (descriptionText != null)
+            descriptionText.text = "";
     }
     public SkillState GetState()
     {
@@ -178,22 +182,5 @@ IPointerExitHandler
             text.text = "";
     }
 
-    //public void ChangeButtonColor(
-    //    Color color)
-    //{
-    //    Image img =
-    //        button.GetComponent<Image>();
-
-    //    if (img != null)
-    //        img.color = color;
-
-    //    ColorBlock cb =
-    //        button.colors;
-
-    //    cb.normalColor = color;
-    //    cb.selectedColor = color;
-    //    cb.pressedColor = color;
-
-    //    button.colors = cb;
-    //}
+   
 }

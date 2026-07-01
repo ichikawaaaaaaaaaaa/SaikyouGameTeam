@@ -5,30 +5,83 @@ public class PanelSwitcher : MonoBehaviour
     public GameObject panelA;
     public GameObject panelB;
     public GameObject panelC;
+    public GameObject panelD;
+    public GameObject panelE;
+    public GameObject panelF;
+    public GameObject panelG;
+    public GameObject panelH;
+    public GameObject panelI;
 
     void Start()
     {
         ShowPanelA();
     }
 
-    public void ShowPanelA()
+    // 全パネルを非表示
+    void HideAllPanels()
     {
-        panelA.SetActive(true);
+        panelA.SetActive(false);
         panelB.SetActive(false);
         panelC.SetActive(false);
+        panelD.SetActive(false);
+        panelE.SetActive(false);
+        panelF.SetActive(false);
+        panelG.SetActive(false);
+        panelH.SetActive(false);
+        panelI.SetActive(false);
+    }
+
+    public void ShowPanelA()
+    {
+        HideAllPanels();
+        panelA.SetActive(true);
     }
 
     public void ShowPanelB()
     {
-        panelA.SetActive(false);
+        HideAllPanels();
         panelB.SetActive(true);
-        panelC.SetActive(false);
     }
 
     public void ShowPanelC()
     {
-        panelA.SetActive(false);
-        panelB.SetActive(false);
+        HideAllPanels();
         panelC.SetActive(true);
+    }
+
+    public void ShowPanelD()
+    {
+        HideAllPanels();
+        panelD.SetActive(true);
+    }
+
+    public void ShowPanelE()
+    {
+        HideAllPanels();
+        panelE.SetActive(true);
+    }
+
+    public void ShowPanelF()
+    {
+        HideAllPanels();
+        panelF.SetActive(true);
+    }
+
+    public void ShowPanelG()
+    {
+        HideAllPanels();
+        panelG.SetActive(true);
+    }
+
+    public void ShowPanelH()
+    {
+        HideAllPanels();
+        panelH.SetActive(true);
+    }
+
+    public void ShowPanelI()
+    {
+        HideAllPanels();
+        panelI.SetActive(true);
     }
 }

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillData
   skillId: attack_lv1
   skillName: "Lv1\u653B\u6483\u529B\u5897\u52A0"
-  description: "Lv1\u653B\u6483\u529B\u5897\u52A0"
+  description: "Lv1\u653B\u6483\u529B\u5897\u52A0\n"
   icon: {fileID: 0}
   cost: 10
   requiredSkills: []

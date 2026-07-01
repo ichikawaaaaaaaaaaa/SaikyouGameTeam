@@ -36,6 +36,8 @@ public class WaveManager : MonoBehaviour
         yield return StartCoroutine(ShowWaveState("WAVE " + (wave + 1)));
         yield return new WaitForSeconds(0.5f);
 
+        Player.canHarvest = true;
+
         KusamushiriCounter.instance.ResetWaveData();
         UpdateWaveUI();
 

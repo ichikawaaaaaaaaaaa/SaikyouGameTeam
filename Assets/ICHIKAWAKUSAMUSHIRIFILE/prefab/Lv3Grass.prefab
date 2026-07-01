@@ -145,7 +145,12 @@ MonoBehaviour:
   score: 1
   skillPoint: 5
   maxHp: 30
-  clickedSprite: {fileID: 21300000, guid: 86e9dcb2503ff8f41b71bad8eb64f0f4, type: 3}
+  grassSprites:
+  - {fileID: 21300000, guid: 843cabcb0bd397944a833a015498f97d, type: 3}
+  - {fileID: 21300000, guid: ef37770b705014643857ef76a3305ddb, type: 3}
+  - {fileID: 21300000, guid: 0341f397897d94342aebd20f8e490580, type: 3}
+  - {fileID: 21300000, guid: 2f16a5cc8433d5e45958d1be1de6b1e7, type: 3}
+  changeTime: 2
 --- !u!82 &3212190636165842381
 AudioSource:
   m_ObjectHideFlags: 0

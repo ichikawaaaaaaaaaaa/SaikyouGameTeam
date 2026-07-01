@@ -1,5 +1,6 @@
-using UnityEngine;
 using System.Collections;
+using UnityEngine;
+using UnityEngine.Audio;
 
 public class Grass : MonoBehaviour
 {
@@ -17,12 +18,17 @@ public class Grass : MonoBehaviour
 
     private SpriteRenderer sr;
 
+    [Header("SE")]
+    public AudioClip harvestSE;
+
+    private AudioSource audioSource;
 
     void Awake()
     {
         currentHp = maxHp;
 
         sr = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
 
         StartCoroutine(GrowGrass());
     }
@@ -60,6 +66,17 @@ public class Grass : MonoBehaviour
 
         CursorManager.Instance.PlayHitCursor(0.15f);
 
-        Destroy(gameObject, 0.1f);
+        GetComponent<SpriteRenderer>().enabled = false;
+        GetComponent<Collider2D>().enabled = false;
+
+        if (harvestSE != null)
+        {
+            audioSource.PlayOneShot(harvestSE);
+            Destroy(gameObject, harvestSE.length);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }
